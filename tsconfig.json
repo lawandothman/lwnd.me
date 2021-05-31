@@ -30,6 +30,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
+    "paths": {
+      "@/styles/*": ["styles/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
