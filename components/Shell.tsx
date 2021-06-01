@@ -25,7 +25,7 @@ const Shell: React.FC = ({ children }) => {
           maxW='1250px'
           w='full'
         >
-          <Flex mr={10}>
+          <Flex>
             {colorMode === 'light' ? (
               <IconButton
                 onClick={toggleColorMode}
@@ -46,7 +46,7 @@ const Shell: React.FC = ({ children }) => {
           <Flex
             alignItems='center'
             justifyContent='space-between'
-            w='400px'
+            w='350px'
             color={color}
           >
             <NextChakraLink
@@ -66,7 +66,7 @@ const Shell: React.FC = ({ children }) => {
             <NextChakraLink
               _hover={{ textDecoration: 'none' }}
               _focus={{ boxShadow: 'none' }}
-              href='/'
+              href='/contact'
             >
               Contact
             </NextChakraLink>
