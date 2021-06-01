@@ -20,9 +20,12 @@ class MyDocument extends Document {
         <Head>
           <link rel='icon' href='/favicon.ico' />
           <title>lwnd.me</title>
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <meta name='description' content='Lawand Othman&apos;s Personal Site' />
-          <meta name='robots' content='index' />
+          <meta
+            name='viewport'
+            content='initial-scale=1.0, width=device-width'
+          />
+          <meta name='description' content="Lawand Othman's Personal Site" />
+          <meta name='robots' content='index, follow' />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
