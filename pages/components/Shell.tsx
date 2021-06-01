@@ -24,12 +24,10 @@ const Shell: React.FC = ({ children }) => {
           maxW='1250px'
           w='full'
         >
-          <Flex>
+          <Flex mr={10}>
             {colorMode === 'light' ? (
               <Button
                 onClick={toggleColorMode}
-                mr={10}
-                variant='solid'
                 _focus={{ boxShadow: 'none' }}
               >
                 <MoonIcon color={color} />
@@ -37,8 +35,6 @@ const Shell: React.FC = ({ children }) => {
             ) : (
               <Button
                 onClick={toggleColorMode}
-                mr={10}
-                variant='solid'
                 _focus={{ boxShadow: 'none' }}
               >
                 <SunIcon color={color} />

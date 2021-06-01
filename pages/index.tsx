@@ -21,7 +21,7 @@ const Home:React.FC = () => {
           <Heading color={headingColor} mb={4}>
             Hey, I’m Lawand Othman
           </Heading>
-          <Text color={textColor} pb={2} fontWeight='medium'>
+          <Text color={textColor} mb={2} fontWeight='medium'>
             I’m a software devleoper based in Birmingham, UK.
           </Text>
           <Text color={textColor} fontWeight='medium'>
