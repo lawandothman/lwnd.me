@@ -5,6 +5,7 @@ import {
   Flex,
   useColorMode,
   useColorModeValue,
+  IconButton,
 } from '@chakra-ui/react'
 import NextChakraLink from './NextChakraLink'
 
@@ -27,13 +28,19 @@ const Shell: React.FC = ({ children }) => {
         >
           <Flex mr={10}>
             {colorMode === 'light' ? (
-              <Button onClick={toggleColorMode} _focus={{ boxShadow: 'none' }}>
-                <MoonIcon color={color} />
-              </Button>
+              <IconButton
+                onClick={toggleColorMode}
+                _focus={{ boxShadow: 'none' }}
+                aria-label='Dark Mode'
+                icon={<MoonIcon color={color} />}
+              />
             ) : (
-              <Button onClick={toggleColorMode} _focus={{ boxShadow: 'none' }}>
-                <SunIcon color={color} />
-              </Button>
+              <IconButton
+                onClick={toggleColorMode}
+                _focus={{ boxShadow: 'none' }}
+                aria-label='Light Mode'
+                icon={<SunIcon color={color} />}
+              />
             )}
           </Flex>
 
