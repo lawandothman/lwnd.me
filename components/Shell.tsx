@@ -3,10 +3,10 @@ import {
   Box,
   Button,
   Flex,
-  Link,
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react'
+import NextChakraLink from './NextChakraLink'
 
 const Shell: React.FC = ({ children }) => {
   const bg = useColorModeValue('white', 'black')
@@ -43,10 +43,34 @@ const Shell: React.FC = ({ children }) => {
             w='400px'
             color={color}
           >
-            <Link href='/'>Projects</Link>
-            <Link href='/'>Stack</Link>
-            <Link href='/'>Contact</Link>
-            <Link href='/'>Home</Link>
+            <NextChakraLink
+              _hover={{ textDecoration: 'none' }}
+              _focus={{ boxShadow: 'none' }}
+              href='/'
+            >
+              Projects
+            </NextChakraLink>
+            <NextChakraLink
+              _hover={{ textDecoration: 'none' }}
+              _focus={{ boxShadow: 'none' }}
+              href='/'
+            >
+              Stack
+            </NextChakraLink>
+            <NextChakraLink
+              _hover={{ textDecoration: 'none' }}
+              _focus={{ boxShadow: 'none' }}
+              href='/'
+            >
+              Contact
+            </NextChakraLink>
+            <NextChakraLink
+              _hover={{ textDecoration: 'none' }}
+              _focus={{ boxShadow: 'none' }}
+              href='/'
+            >
+              Home
+            </NextChakraLink>
           </Flex>
         </Flex>
       </Flex>
