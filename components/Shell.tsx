@@ -12,6 +12,7 @@ const Shell: React.FC = ({ children }) => {
   const bg = useColorModeValue('white', 'black')
   const color = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
   const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <Box backgroundColor={bg} h='100vh'>
       <Flex backgroundColor={bg} w='full'>

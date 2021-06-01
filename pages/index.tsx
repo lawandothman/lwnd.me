@@ -1,9 +1,9 @@
+import React from 'react'
+import Head from 'next/head'
 import {
   Box, Heading, Text, useColorModeValue,
 } from '@chakra-ui/react'
-import Head from 'next/head'
-import React from 'react'
-import Shell from './components/Shell'
+import Shell from '@/components/Shell'
 
 const Home:React.FC = () => {
   const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
