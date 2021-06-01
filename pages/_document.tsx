@@ -22,6 +22,7 @@ class MyDocument extends Document {
           <title>lwnd.me</title>
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
           <meta name='description' content='Lawand Othman&apos;s Personal Site' />
+          <meta name='robots' content='index' />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
