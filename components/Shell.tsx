@@ -25,7 +25,7 @@ const Shell: React.FC = ({ children }) => {
           maxW='1250px'
           w='full'
         >
-          <Flex>
+          <Flex mr={4}>
             {colorMode === 'light' ? (
               <IconButton
                 onClick={toggleColorMode}
