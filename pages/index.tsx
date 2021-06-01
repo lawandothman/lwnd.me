@@ -21,8 +21,6 @@ const Home:React.FC = () => {
           </Heading>
           <Text color={textColor} mb={2} fontWeight='medium'>
             I’m a software devleoper based in Birmingham, UK.
-          </Text>
-          <Text color={textColor} fontWeight='medium'>
             You’ve found my personal slice of the internet where I share all the
             beautiful and fun stuff I’m working on.
           </Text>
