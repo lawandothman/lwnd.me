@@ -3,7 +3,7 @@ import {
   Box, Heading, Text, useColorModeValue,
 } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
-import { Head } from 'next/document'
+import Head from 'next/head'
 
 const Home:React.FC = () => {
   const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
