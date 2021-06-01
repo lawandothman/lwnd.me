@@ -19,8 +19,7 @@ const Shell: React.FC = ({ children }) => {
           alignItems='center'
           backgroundColor={bg}
           justifyContent='space-between'
-          py={4}
-          px={8}
+          p={8}
           margin='0 auto'
           maxW='1250px'
           w='full'
@@ -29,8 +28,8 @@ const Shell: React.FC = ({ children }) => {
             {colorMode === 'light' ? (
               <Button
                 onClick={toggleColorMode}
-                ml={10}
-                variant='ghost'
+                mr={10}
+                variant='solid'
                 _focus={{ boxShadow: 'none' }}
               >
                 <MoonIcon color={color} />
@@ -38,8 +37,8 @@ const Shell: React.FC = ({ children }) => {
             ) : (
               <Button
                 onClick={toggleColorMode}
-                ml={10}
-                variant='ghost'
+                mr={10}
+                variant='solid'
                 _focus={{ boxShadow: 'none' }}
               >
                 <SunIcon color={color} />
@@ -47,17 +46,17 @@ const Shell: React.FC = ({ children }) => {
             )}
           </Flex>
 
-          <Flex alignItems='center' justifyContent='center'>
-            <Link href='/' color={color} mr={10}>
+          <Flex alignItems='center' justifyContent='space-between' w='400px'>
+            <Link href='/' color={color}>
               Projects
             </Link>
-            <Link href='/' color={color} mr={10}>
+            <Link href='/' color={color}>
               Stack
             </Link>
-            <Link href='/' color={color} mr={10}>
+            <Link href='/' color={color}>
               Contact
             </Link>
-            <Link href='/' color={color} mr={10}>
+            <Link href='/' color={color}>
               Home
             </Link>
           </Flex>
