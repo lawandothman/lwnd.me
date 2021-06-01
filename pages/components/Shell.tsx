@@ -36,19 +36,16 @@ const Shell: React.FC = ({ children }) => {
             )}
           </Flex>
 
-          <Flex alignItems='center' justifyContent='space-between' w='400px'>
-            <Link href='/' color={color}>
-              Projects
-            </Link>
-            <Link href='/' color={color}>
-              Stack
-            </Link>
-            <Link href='/' color={color}>
-              Contact
-            </Link>
-            <Link href='/' color={color}>
-              Home
-            </Link>
+          <Flex
+            alignItems='center'
+            justifyContent='space-between'
+            w='400px'
+            color={color}
+          >
+            <Link href='/'>Projects</Link>
+            <Link href='/'>Stack</Link>
+            <Link href='/'>Contact</Link>
+            <Link href='/'>Home</Link>
           </Flex>
         </Flex>
       </Flex>
