@@ -26,17 +26,11 @@ const Shell: React.FC = ({ children }) => {
         >
           <Flex mr={10}>
             {colorMode === 'light' ? (
-              <Button
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-              >
+              <Button onClick={toggleColorMode} _focus={{ boxShadow: 'none' }}>
                 <MoonIcon color={color} />
               </Button>
             ) : (
-              <Button
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-              >
+              <Button onClick={toggleColorMode} _focus={{ boxShadow: 'none' }}>
                 <SunIcon color={color} />
               </Button>
             )}
@@ -58,7 +52,7 @@ const Shell: React.FC = ({ children }) => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex margin='0 auto' direction='column' maxW='1250px' px={8}>
+      <Flex mx='auto' maxWidth={590} direction='column' px={8}>
         {children}
       </Flex>
     </Box>

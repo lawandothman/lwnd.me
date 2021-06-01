@@ -17,7 +17,7 @@ const Home:React.FC = () => {
       </Head>
 
       <Shell>
-        <Box ml='auto' mr='auto' maxWidth={590} mt={20}>
+        <Box mt={20}>
           <Heading color={headingColor} mb={4}>
             Hey, I’m Lawand Othman
           </Heading>
