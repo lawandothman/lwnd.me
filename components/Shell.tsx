@@ -9,8 +9,8 @@ import {
   Center,
   Text,
 } from '@chakra-ui/react'
-import { Spotify } from './Icons'
 import NextChakraLink from './NextChakraLink'
+import NowPlaying from './NowPlaying'
 
 const Shell: React.FC = ({ children }) => {
   const bg = useColorModeValue('white', 'black')
@@ -98,12 +98,15 @@ const Shell: React.FC = ({ children }) => {
         <Center>
           <Divider maxWidth={590} color='black' orientation='horizontal' />
         </Center>
-        <Flex px={8} mx='auto' maxW={590} justifyContent='center' direction='column'>
+        <Flex
+          px={8}
+          mx='auto'
+          maxW={590}
+          justifyContent='center'
+          direction='column'
+        >
           <Box mt={2}>
-            <Text fontWeight='bold' fontSize='lg' mb={2}>
-              <Spotify fill={color} viewBox='0 0 70 55' width='8' height='8' mr={3} />
-              Artist - Track
-            </Text>
+            <NowPlaying />
             <Text fontWeight='light' fontSize='sm' color={textColor}>
               Built with Next.js and Vercel
             </Text>

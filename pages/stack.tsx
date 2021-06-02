@@ -15,12 +15,15 @@ const Stack: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20}>
+        <Box mt={20} height='75vh'>
           <Heading color={headingColor} mb={4}>
             Stack
           </Heading>
           <Text color={textColor} mb={2} fontWeight='medium'>
             My favourite tools and software.
+          </Text>
+          <Text color={textColor} mb={2} fontSize='sm'>
+            This page is under construction, please check back later.
           </Text>
         </Box>
       </Shell>

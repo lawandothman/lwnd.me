@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box height='75vh' mt={20}>
+        <Box height='65vh' mt={20}>
           <Heading color={headingColor} mb={4}>
             Contact me
           </Heading>
