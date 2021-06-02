@@ -24,13 +24,14 @@ const Contact: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20}>
+        <Box height='75vh' mt={20}>
           <Heading color={headingColor} mb={4}>
             Contact me
           </Heading>
           <Text color={textColor} mb={2} fontWeight='medium'>
             Have a question or want to work together?
           </Text>
+
           <Flex mt={12} direction='row' justifyContent='space-between'>
             <IconButton
               aria-label='Email'
