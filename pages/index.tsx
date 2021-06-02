@@ -20,7 +20,7 @@ const Home:React.FC = () => {
             Hey, I’m Lawand Othman
           </Heading>
           <Text color={textColor} mb={2} fontWeight='medium'>
-            I’m a devleoper based in Birmingham, UK.
+            I’m a developer based in Birmingham, UK.
             You’ve found my personal slice of the internet where I share all the
             beautiful and fun stuff I’m working on.
           </Text>
