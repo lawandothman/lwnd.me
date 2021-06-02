@@ -100,8 +100,8 @@ const Shell: React.FC = ({ children }) => {
         </Center>
         <Flex px={8} mx='auto' maxW={590} justifyContent='center' direction='column'>
           <Box mt={2}>
-            <Text fontWeight='medium' mb={2}>
-              <Spotify fill={color} viewBox='0 0 70 60' width='5' height='5' mr={3} />
+            <Text fontWeight='bold' fontSize='lg' mb={2}>
+              <Spotify fill={color} viewBox='0 0 70 55' width='8' height='8' mr={3} />
               Artist - Track
             </Text>
             <Text fontWeight='light' fontSize='sm' color={textColor}>
