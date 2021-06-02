@@ -5,84 +5,111 @@ import {
   useColorMode,
   useColorModeValue,
   IconButton,
+  Divider,
+  Center,
+  Text,
 } from '@chakra-ui/react'
+import { Spotify } from './Icons'
 import NextChakraLink from './NextChakraLink'
 
 const Shell: React.FC = ({ children }) => {
   const bg = useColorModeValue('white', 'black')
   const color = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
+  const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box backgroundColor={bg} h='100vh'>
-      <Flex backgroundColor={bg} w='full'>
-        <Flex
-          alignItems='center'
-          backgroundColor={bg}
-          justifyContent='space-between'
-          p={8}
-          margin='0 auto'
-          maxW='1250px'
-          w='full'
-        >
-          <Flex mr={4}>
-            {colorMode === 'light' ? (
-              <IconButton
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-                aria-label='Dark Mode'
-                icon={<MoonIcon color={color} />}
-              />
-            ) : (
-              <IconButton
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-                aria-label='Light Mode'
-                icon={<SunIcon color={color} />}
-              />
-            )}
-          </Flex>
-
+      <nav>
+        <Flex backgroundColor={bg} w='full'>
           <Flex
             alignItems='center'
+            backgroundColor={bg}
             justifyContent='space-between'
-            w='350px'
-            color={color}
+            p={8}
+            margin='0 auto'
+            maxW='1250px'
+            w='full'
           >
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/'
+            <Flex mr={4}>
+              {colorMode === 'light' ? (
+                <IconButton
+                  onClick={toggleColorMode}
+                  _focus={{ boxShadow: 'none' }}
+                  aria-label='Dark Mode'
+                  icon={<MoonIcon color={color} />}
+                />
+              ) : (
+                <IconButton
+                  onClick={toggleColorMode}
+                  _focus={{ boxShadow: 'none' }}
+                  aria-label='Light Mode'
+                  icon={<SunIcon color={color} />}
+                />
+              )}
+            </Flex>
+
+            <Flex
+              alignItems='center'
+              justifyContent='space-between'
+              w='350px'
+              color={color}
             >
-              Projects
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/'
-            >
-              Stack
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/contact'
-            >
-              Contact
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/'
-            >
-              Home
-            </NextChakraLink>
+              <NextChakraLink
+                _hover={{ textDecoration: 'none' }}
+                _focus={{ boxShadow: 'none' }}
+                href='/projects'
+              >
+                Projects
+              </NextChakraLink>
+              <NextChakraLink
+                _hover={{ textDecoration: 'none' }}
+                _focus={{ boxShadow: 'none' }}
+                href='/stack'
+              >
+                Stack
+              </NextChakraLink>
+              <NextChakraLink
+                _hover={{ textDecoration: 'none' }}
+                _focus={{ boxShadow: 'none' }}
+                href='/contact'
+              >
+                Contact
+              </NextChakraLink>
+              <NextChakraLink
+                _hover={{ textDecoration: 'none' }}
+                _focus={{ boxShadow: 'none' }}
+                href='/'
+              >
+                Home
+              </NextChakraLink>
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
-      <Flex mx='auto' maxWidth={590} direction='column' px={8}>
-        {children}
-      </Flex>
+      </nav>
+
+      <main>
+        <Flex mx='auto' maxWidth={590} direction='column' px={8}>
+          {children}
+        </Flex>
+      </main>
+
+      <footer>
+        <Center>
+          <Divider maxWidth={590} color='black' orientation='horizontal' />
+        </Center>
+        <Flex px={8} mx='auto' maxW={590} justifyContent='center' direction='column'>
+          <Box mt={2}>
+            <Text fontWeight='medium' mb={2}>
+              <Spotify fill={color} viewBox='0 0 70 60' width='5' height='5' mr={3} />
+              Artist - Track
+            </Text>
+            <Text fontWeight='light' fontSize='sm' color={textColor}>
+              Built with Next.js and Vercel
+            </Text>
+          </Box>
+        </Flex>
+      </footer>
     </Box>
   )
 }
