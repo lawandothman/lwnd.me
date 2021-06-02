@@ -25,7 +25,7 @@ class MyDocument extends Document {
             property='og:description'
             content="Lawand Othman's Personal Site"
           />
-          <meta property='og:image' content='./logo.png' />
+          <meta property='og:image' content='https://lwnd.me/public/logo.png' />
           <meta name='robots' content='index, follow' />
         </Head>
         <body>
