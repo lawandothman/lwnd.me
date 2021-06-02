@@ -20,6 +20,12 @@ class MyDocument extends Document {
         <Head>
           <link rel='icon' href='/favicon.ico' />
           <meta name='description' content="Lawand Othman's Personal Site" />
+          <meta property='og:title' content='lwnd.me' />
+          <meta
+            property='og:description'
+            content="Lawand Othman's Personal Site"
+          />
+          <meta property='og:image' content='./logo.jpg' />
           <meta name='robots' content='index, follow' />
         </Head>
         <body>
