@@ -24,10 +24,8 @@ const Custom404: React.FC = () => {
             404 - Page Not Found
           </Heading>
           <Text mb={10} fontWeight='medium' color={textColor}>
-            It seems that you&apos;ve found something that used to be here, or you
-            spelled something wrong.
-
-            I&apos;m guessing you spelled something
+            It seems that you&apos;ve found something that used to be here, or
+            you spelled something wrong. I&apos;m guessing you spelled something
             wrong. Can you double check that URL?
           </Text>
           <Flex justifyContent='flex-end'>
