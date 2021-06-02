@@ -21,11 +21,12 @@ class MyDocument extends Document {
           <link rel='icon' href='/favicon.ico' />
           <meta name='description' content="Lawand Othman's Personal Site" />
           <meta property='og:title' content='lwnd.me' />
+          <meta property='og:url' content='https://lwnd.me' />
           <meta
             property='og:description'
             content="Lawand Othman's Personal Site"
           />
-          <meta property='og:image' content='/logo.png' />
+          <meta property='og:image' content='https://lwnd.me/logo.png' />
           <meta name='robots' content='index, follow' />
         </Head>
         <body>
