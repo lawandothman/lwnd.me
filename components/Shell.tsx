@@ -92,22 +92,23 @@ const Shell: React.FC = ({ children }) => {
         <Flex mx='auto' maxWidth={590} direction='column' px={8}>
           {children}
         </Flex>
+
       </main>
 
       <footer>
         <Center>
-          <Divider maxWidth={590} color='black' orientation='horizontal' />
+          <Divider w='full' maxWidth={470} color='black' orientation='horizontal' />
         </Center>
         <Flex
           px={8}
           mx='auto'
-          maxW={590}
+          maxW={500}
           justifyContent='center'
           direction='column'
         >
           <Box mt={2}>
             <NowPlaying />
-            <Text fontWeight='light' fontSize='sm' color={textColor}>
+            <Text fontSize='xs' color={textColor}>
               Built with Next.js and Vercel
             </Text>
           </Box>
