@@ -14,7 +14,7 @@ const projects: IProject[] = [
   {
     title: 'Shopcart',
     source: 'https://github.com/lawandothman/shopcart',
-    description: 'Ecommerce plarform with Paypal integration',
+    description: 'Ecommerce plarform with PayPal integration',
   },
   {
     title: 'Fast Feedback',
@@ -24,7 +24,7 @@ const projects: IProject[] = [
   {
     title: 'Swindler',
     source: 'https://github.com/pedsm/swindler',
-    description: 'CovHac2020 2nd Place Winner - a social deception game',
+    description: 'CovHack2020 2nd Place Winner - a social deception game',
   },
   {
     title: 'White Rabbit',
