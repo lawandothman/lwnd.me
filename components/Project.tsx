@@ -1,7 +1,5 @@
 import { IProject } from 'types'
-import {
-  Badge, Box, Text, useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Text, useColorModeValue } from '@chakra-ui/react'
 import NextChakraLink from './NextChakraLink'
 
 interface ProjectProps {
@@ -21,18 +19,6 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       >
         {project.title}
       </NextChakraLink>
-      {project.url && (
-      <Badge
-        variant='subtle'
-        ml={2}
-        px={2}
-        as='a'
-        href={project.url}
-        target='_blank'
-      >
-        Live
-      </Badge>
-      )}
       <Text fontWeight='light' color={textColor}>
         {project.description}
       </Text>
