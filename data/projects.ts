@@ -9,7 +9,7 @@ const projects: IProject[] = [
   {
     title: 'Litter',
     source: 'https://github.com/lawandothman/litter',
-    description: 'A microbloggin and social networking service',
+    description: 'A microblogging and social networking service',
   },
   {
     title: 'Shopcart',
