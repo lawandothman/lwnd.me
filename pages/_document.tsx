@@ -29,8 +29,9 @@ class MyDocument extends Document {
             property='og:description'
             content="Lawand Othman's Personal Site"
           />
-          <meta name='twitter:card' content='summary' />
+          <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:title' content='lwnd.me' />
+          <meta name='twitter:site' content='@lwndothman' />
           <meta name='twitter:description' content="Lawand Othman's personal site" />
           <meta name='twitter:image' content='https://lwnd.me/logo.png' />
         </Head>
