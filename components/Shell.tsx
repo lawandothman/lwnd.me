@@ -90,12 +90,25 @@ const Shell: React.FC = ({ children }) => {
       </nav>
 
       <main>
-        <Flex mx='auto' maxWidth={590} direction='column' px={8} mb={4} overflow='auto'>
+        <Flex
+          mx='auto'
+          maxWidth={590}
+          direction='column'
+          px={8}
+          height='80vh'
+          mb={6}
+          overflow='auto'
+        >
           {children}
         </Flex>
         <footer>
           <Center>
-            <Divider w='full' maxWidth={470} color='black' orientation='horizontal' />
+            <Divider
+              w='full'
+              maxWidth={470}
+              color='black'
+              orientation='horizontal'
+            />
           </Center>
           <Flex
             px={8}
