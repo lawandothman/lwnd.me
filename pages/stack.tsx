@@ -15,7 +15,7 @@ const Stack: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20} height='500px'>
+        <Box mt={20} height='80vh'>
           <Heading color={headingColor} mb={4}>
             Stack
           </Heading>

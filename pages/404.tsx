@@ -19,7 +19,7 @@ const Custom404: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20} height='500px'>
+        <Box mt={20} height='80vh'>
           <Heading color={headingColor} mb={10}>
             404 - Page Not Found
           </Heading>
