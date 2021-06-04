@@ -26,7 +26,8 @@ const Shell: React.FC = ({ children }) => {
             alignItems='center'
             backgroundColor={bg}
             justifyContent='space-between'
-            p={8}
+            px={8}
+            py={4}
             margin='0 auto'
             maxW='1250px'
             w='full'
@@ -89,7 +90,7 @@ const Shell: React.FC = ({ children }) => {
       </nav>
 
       <main>
-        <Flex mx='auto' maxWidth={590} direction='column' px={8} overflow='scroll'>
+        <Flex mx='auto' maxWidth={590} direction='column' px={8} mb={4} overflow='auto'>
           {children}
         </Flex>
         <footer>
