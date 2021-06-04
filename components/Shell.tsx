@@ -93,27 +93,27 @@ const Shell: React.FC = ({ children }) => {
           {children}
         </Flex>
 
+        <footer>
+          <Center>
+            <Divider w='full' maxWidth={470} color='black' orientation='horizontal' />
+          </Center>
+          <Flex
+            px={8}
+            mx='auto'
+            maxW={500}
+            justifyContent='center'
+            direction='column'
+          >
+            <Box mt={2}>
+              <NowPlaying />
+              <Text fontSize='xs' color={textColor}>
+                Built with Next.js and Vercel
+              </Text>
+            </Box>
+          </Flex>
+        </footer>
       </main>
 
-      <footer>
-        <Center>
-          <Divider w='full' maxWidth={470} color='black' orientation='horizontal' />
-        </Center>
-        <Flex
-          px={8}
-          mx='auto'
-          maxW={500}
-          justifyContent='center'
-          direction='column'
-        >
-          <Box mt={2}>
-            <NowPlaying />
-            <Text fontSize='xs' color={textColor}>
-              Built with Next.js and Vercel
-            </Text>
-          </Box>
-        </Flex>
-      </footer>
     </Box>
   )
 }
