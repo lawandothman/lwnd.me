@@ -10,7 +10,7 @@ const NowPlaying: React.FC = () => {
   const color = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
   return (
     <Box maxW='590'>
-      <Text fontSize='m' mb={4}>
+      <Text fontSize='m' mb={2}>
         <Spotify
           fill={data?.songUrl ? '#1DB954' : color}
           viewBox='0 0 70 55'
