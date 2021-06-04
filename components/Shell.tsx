@@ -89,10 +89,9 @@ const Shell: React.FC = ({ children }) => {
       </nav>
 
       <main>
-        <Flex mx='auto' maxWidth={590} direction='column' px={8}>
+        <Flex mx='auto' maxWidth={590} direction='column' px={8} overflow='scroll'>
           {children}
         </Flex>
-
         <footer>
           <Center>
             <Divider w='full' maxWidth={470} color='black' orientation='horizontal' />
@@ -113,7 +112,6 @@ const Shell: React.FC = ({ children }) => {
           </Flex>
         </footer>
       </main>
-
     </Box>
   )
 }
