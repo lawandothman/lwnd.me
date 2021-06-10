@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Box, Heading, useColorModeValue, VStack,
-} from '@chakra-ui/react'
+import { Heading, useColorModeValue, VStack } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
 import Head from 'next/head'
 import Project from '@/components/Project'
@@ -16,16 +14,14 @@ const Projects: React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20} height='80vh'>
-          <Heading color={headingColor} mb={8}>
-            Projects
-          </Heading>
-          <VStack spacing={4} align='stretch'>
-            {projects.map((project) => (
-              <Project project={project} key={project.title} />
-            ))}
-          </VStack>
-        </Box>
+        <Heading color={headingColor} mb={8}>
+          Projects
+        </Heading>
+        <VStack spacing={4} align='stretch'>
+          {projects.map((project) => (
+            <Project project={project} key={project.title} />
+          ))}
+        </VStack>
       </Shell>
     </div>
   )

@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Box, Heading, Text, useColorModeValue,
-} from '@chakra-ui/react'
+import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
 import Head from 'next/head'
 
@@ -15,16 +13,14 @@ const Home:React.FC = () => {
         <title>lwnd</title>
       </Head>
       <Shell>
-        <Box mt={20} height='80vh'>
-          <Heading color={headingColor} mb={4}>
-            Hey, I’m Lawand Othman
-          </Heading>
-          <Text color={textColor} mb={2} fontWeight='medium'>
-            I’m a developer based in Birmingham, UK.
-            You’ve found my personal slice of the internet where I share all the
-            beautiful and fun stuff I’m working on.
-          </Text>
-        </Box>
+        <Heading color={headingColor} mb={4}>
+          Hey, I’m Lawand Othman
+        </Heading>
+        <Text color={textColor} mb={2} fontWeight='medium'>
+          I’m a developer based in Birmingham, UK.
+          You’ve found my personal slice of the internet where I share all the
+          beautiful and fun stuff I’m working on.
+        </Text>
       </Shell>
     </div>
 
