@@ -1,4 +1,5 @@
 import {
+  Chakra,
   Dependabot, Figma, NextJs, Notion, Vercel, VSCode,
 } from '@/components/Icons'
 import { IStack } from 'types'
@@ -21,6 +22,14 @@ const stack: IStack[] = [
     description: 'My design tool of choice',
     url: 'https://www.figma.com/',
     icon: Figma({ viewBox: '0 0 39 58', w: '58', height: '58' }),
+  },
+  {
+    name: 'Chakra UI',
+    description: 'The best React component-based library',
+    url: 'https://www.notion.so/',
+    icon: Chakra({
+      viewBox: '0 0 58 58', w: '58', height: '58', fill: '#58c9c7', backgroundColor: 'white', color: 'white',
+    }),
   },
   {
     name: 'Vercel',
