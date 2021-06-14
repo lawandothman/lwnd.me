@@ -23,6 +23,7 @@ const NowPlaying: React.FC = () => {
           <NextChakraLink
             href={data.songUrl}
             target='_blank'
+            rel='noopener noreferrer'
             _hover={{ textDecoration: 'none' }}
             _focus={{ boxShadow: 'none' }}
           >

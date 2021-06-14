@@ -31,6 +31,7 @@ const Stack: React.FC = () => {
           <Flex
             as='a'
             href='https://code.visualstudio.com/'
+            rel='noopener noreferrer'
             target='_blank'
             alignItems='center'
             width='full'
