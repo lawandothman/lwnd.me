@@ -4,3 +4,10 @@ export interface IProject {
   description: string
   url?: string
 }
+
+export interface IStack {
+  name: string
+  description: string
+  url: string
+  icon: any
+}
