@@ -104,7 +104,7 @@ const Shell: React.FC = ({ children }) => {
           color='black'
           orientation='horizontal'
         />
-        <Box mt={4}>
+        <Box my={4}>
           <NowPlaying />
           <Text fontSize='xs' color={textColor}>
             Built with Next.js and Vercel

@@ -26,7 +26,7 @@ const stack: IStack[] = [
   {
     name: 'Chakra UI',
     description: 'The best React component-based library',
-    url: 'https://www.notion.so/',
+    url: 'https://chakra-ui.com/',
     icon: Chakra({
       viewBox: '0 0 58 58', w: '58', height: '58', fill: '#58c9c7', backgroundColor: 'white', color: 'white',
     }),
@@ -49,7 +49,6 @@ const stack: IStack[] = [
     url: 'https://www.notion.so/',
     icon: Notion({ viewBox: '0 0 58 58', w: '58', height: '58' }),
   },
-
 ]
 
 export default stack
