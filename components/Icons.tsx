@@ -129,7 +129,11 @@ export const Notion: React.FC<IconProps> = (props) => (
 
 export const Vercel: React.FC<IconProps> = (props) => (
   <Icon xmlns='http://www.w3.org/2000/svg' {...props}>
-    <path fillRule='evenodd' clipRule='evenodd' d='M29 5.4375L56.1875 52.5625H1.8125L29 5.4375Z' />
+    <path
+      fillRule='evenodd'
+      clipRule='evenodd'
+      d='M29 5.4375L56.1875 52.5625H1.8125L29 5.4375Z'
+    />
   </Icon>
 )
 
