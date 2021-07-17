@@ -10,7 +10,7 @@ import {
 import Shell from '@/components/Shell'
 import Head from 'next/head'
 import {
-  Email, GitHub, LinkedIn, Twitter,
+  Email, GitHub, KoFi, LinkedIn, Twitter,
 } from '@/components/Icons'
 
 const Contact: React.FC = () => {
@@ -97,6 +97,23 @@ const Contact: React.FC = () => {
               variant='outline'
               as='a'
               href='https://twitter.com/lwndothman'
+              target='_blank'
+              _focus={{ boxShadow: 'none' }}
+            />
+            <IconButton
+              aria-label='Ko-Fi'
+              p={4}
+              icon={(
+                <KoFi
+                  fill={iconColor}
+                  width='30'
+                  height='30'
+                  viewBox='0 0 58 58'
+                />
+              )}
+              variant='outline'
+              as='a'
+              href='https://ko-fi.com/lawand'
               target='_blank'
               _focus={{ boxShadow: 'none' }}
             />
