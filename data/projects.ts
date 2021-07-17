@@ -26,6 +26,12 @@ const projects: IProject[] = [
     url: 'https://fastfeedback-lwnd.vercel.app/',
   },
   {
+    title: 'lwnd.me',
+    source: 'https://github.com/lawandothman/lwnd.me',
+    description: 'My personal website',
+    url: '#',
+  },
+  {
     title: 'Swindler',
     source: 'https://github.com/pedsm/swindler',
     description: 'CovHack2020 2nd Place Winner - a social deception game',

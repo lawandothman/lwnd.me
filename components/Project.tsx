@@ -25,7 +25,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <NextChakraLink
             href={project.url}
             _hover={{ textDecoration: 'none' }}
-            target='blank'
+            target={project.url === '#' ? '_self' : '_blank'}
             _focus={{ boxShadow: 'none' }}
           >
             {project.title}
