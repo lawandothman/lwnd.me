@@ -36,6 +36,7 @@ const Contact: React.FC = () => {
             <IconButton
               aria-label='Email'
               p={4}
+              mr={['0.3rem', '0']}
               icon={(
                 <Email
                   fill={iconColor}
@@ -52,6 +53,7 @@ const Contact: React.FC = () => {
             <IconButton
               aria-label='GitHub'
               p={4}
+              mr={['0.3rem', '0']}
               icon={(
                 <GitHub
                   fill={iconColor}
@@ -69,6 +71,7 @@ const Contact: React.FC = () => {
             <IconButton
               aria-label='LinkedIn'
               p={4}
+              mr={['0.3rem', '0']}
               icon={(
                 <LinkedIn
                   fill={iconColor}
@@ -86,6 +89,7 @@ const Contact: React.FC = () => {
             <IconButton
               aria-label='Twitter'
               p={4}
+              mr={['0.3rem', '0']}
               icon={(
                 <Twitter
                   fill={iconColor}
