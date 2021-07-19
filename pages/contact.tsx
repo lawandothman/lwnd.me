@@ -35,8 +35,8 @@ const Contact: React.FC = () => {
           <Flex mt={12} direction='row' justifyContent='space-between'>
             <IconButton
               aria-label='Email'
+              borderWidth={['0px', '1px']}
               p={4}
-              mr={['0.3rem', '0']}
               icon={(
                 <Email
                   fill={iconColor}
@@ -52,8 +52,8 @@ const Contact: React.FC = () => {
             />
             <IconButton
               aria-label='GitHub'
+              borderWidth={['0px', '1px']}
               p={4}
-              mr={['0.3rem', '0']}
               icon={(
                 <GitHub
                   fill={iconColor}
@@ -70,8 +70,8 @@ const Contact: React.FC = () => {
             />
             <IconButton
               aria-label='LinkedIn'
+              borderWidth={['0px', '1px']}
               p={4}
-              mr={['0.3rem', '0']}
               icon={(
                 <LinkedIn
                   fill={iconColor}
@@ -88,8 +88,8 @@ const Contact: React.FC = () => {
             />
             <IconButton
               aria-label='Twitter'
+              borderWidth={['0px', '1px']}
               p={4}
-              mr={['0.3rem', '0']}
               icon={(
                 <Twitter
                   fill={iconColor}
@@ -106,6 +106,7 @@ const Contact: React.FC = () => {
             />
             <IconButton
               aria-label='Ko-Fi'
+              borderWidth={['0px', '1px']}
               p={4}
               icon={(
                 <KoFi
