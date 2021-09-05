@@ -1,6 +1,5 @@
 {
   "extends": [
-    "airbnb-typescript",
     "next"
   ],
   "parserOptions": {
@@ -11,16 +10,13 @@
       "error",
       "single"
     ],
-    "@typescript-eslint/semi": [
+    "semi": [
       "error",
       "never"
     ],
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
-    "jsx-quotes": ["error", "prefer-single"],
-    "react/prop-types": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/destructuring-assignment": "off",
-    "import/prefer-default-export": "off"
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ]
   }
 }
