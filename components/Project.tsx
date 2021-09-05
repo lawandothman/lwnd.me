@@ -23,6 +23,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       <HStack mb={2} spacing={4}>
         {project.url ? (
           <NextChakraLink
+            rel='noreferrer'
             href={project.url}
             _hover={{ textDecoration: 'none' }}
             target={project.url === '#' ? '_self' : '_blank'}

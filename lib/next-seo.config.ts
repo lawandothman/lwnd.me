@@ -1,6 +1,7 @@
 import { NextSeoProps } from 'next-seo'
 
 const SEO: NextSeoProps = {
+  description:'Lawand Othman\'s Personal Site',
   openGraph: {
     type: 'website',
     locale: 'en_GB',
