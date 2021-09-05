@@ -4,7 +4,6 @@ import {
   HStack,
   Text,
   useColorModeValue,
-  WrapItem,
 } from '@chakra-ui/react'
 
 import React from 'react'
@@ -34,9 +33,8 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         ) : (
           <Text>{project.title}</Text>
         )}
-        <WrapItem>
+
           <ViewSource source={project.source}>View source</ViewSource>
-        </WrapItem>
       </HStack>
 
       <Text fontWeight='light' color={textColor}>
