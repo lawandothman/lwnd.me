@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "incremental": true,
     "removeComments": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -39,8 +40,8 @@
       ],
       "@/lib/*": [
         "lib/*"
-      ],
-    }
+      ]
+    },
   },
   "include": [
     "next-env.d.ts",
