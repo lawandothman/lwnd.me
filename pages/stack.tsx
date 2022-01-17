@@ -5,17 +5,14 @@ import {
 import Shell from '@/components/Shell'
 import StackItem from '@/components/StackItem'
 import stack from 'data/stack'
-import Head from 'next/head'
+import Page from '@/components/Page'
 
 const Stack: React.FC = () => {
   const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
   const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
 
   return (
-    <div>
-      <Head>
-        <title>lwnd</title>
-      </Head>
+    <Page name='Stack' path='/stack'>
       <Shell>
         <Heading color={headingColor} mb={4}>
           Stack
@@ -29,7 +26,7 @@ const Stack: React.FC = () => {
           ))}
         </VStack>
       </Shell>
-    </div>
+    </Page>
   )
 }
 export default Stack

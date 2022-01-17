@@ -1,27 +1,30 @@
 import { NextSeoProps } from 'next-seo'
 
+const title = 'lwnd'
+const description = 'Lawand Othman\'s Personal Website'
+
 const SEO: NextSeoProps = {
-  description:'Lawand Othman\'s Personal Site',
+  title,
+  description,
+  canonical: 'https://lwnd.me',
   openGraph: {
     type: 'website',
-    locale: 'en_GB',
+    locale: 'en_IE',
     url: 'https://lwnd.me',
-    site_name: 'lwnd.me',
-    title: 'lwnd.me',
-    description: 'Lawand Othman\'s Personal Site',
+    title,
+    description,
     images: [
       {
         url: 'https://lwnd.me/logo.png',
-        width: 1200,
-        height: 627,
-        alt: 'lwnd.me Og Image Alt',
+        alt: title,
+        width: 1280,
+        height: 720,
       },
     ],
   },
   twitter: {
     handle: '@lwndothman',
   },
-
 }
 
 export default SEO

@@ -8,21 +8,17 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
-import Head from 'next/head'
-import {
-  Email, GitHub, KoFi, LinkedIn, Twitter,
-} from '@/components/Icons'
+import { Email, GitHub, KoFi, LinkedIn, Twitter } from '@/components/Icons'
+import Page from '@/components/Page'
+import { NextPage } from 'next'
 
-const Contact: React.FC = () => {
+const Contact: NextPage = () => {
   const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
   const iconColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
   const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
 
   return (
-    <div>
-      <Head>
-        <title>lwnd</title>
-      </Head>
+    <Page name='Contact' path='/contact'>
       <Shell>
         <Box>
           <Heading color={headingColor} mb={4}>
@@ -37,14 +33,14 @@ const Contact: React.FC = () => {
               aria-label='Email'
               borderWidth={['0px', '1px']}
               p={4}
-              icon={(
+              icon={
                 <Email
                   fill={iconColor}
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
                 />
-              )}
+              }
               variant='outline'
               as='a'
               href='mailto:lwnd@pm.me'
@@ -54,14 +50,14 @@ const Contact: React.FC = () => {
               aria-label='GitHub'
               borderWidth={['0px', '1px']}
               p={4}
-              icon={(
+              icon={
                 <GitHub
                   fill={iconColor}
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
                 />
-              )}
+              }
               variant='outline'
               as='a'
               href='https://github.com/lawandothman'
@@ -72,14 +68,14 @@ const Contact: React.FC = () => {
               aria-label='LinkedIn'
               borderWidth={['0px', '1px']}
               p={4}
-              icon={(
+              icon={
                 <LinkedIn
                   fill={iconColor}
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
                 />
-              )}
+              }
               variant='outline'
               as='a'
               href='https://www.linkedin.com/in/lawandothman/'
@@ -90,14 +86,14 @@ const Contact: React.FC = () => {
               aria-label='Twitter'
               borderWidth={['0px', '1px']}
               p={4}
-              icon={(
+              icon={
                 <Twitter
                   fill={iconColor}
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
                 />
-              )}
+              }
               variant='outline'
               as='a'
               href='https://twitter.com/lwndothman'
@@ -108,14 +104,14 @@ const Contact: React.FC = () => {
               aria-label='Ko-Fi'
               borderWidth={['0px', '1px']}
               p={4}
-              icon={(
+              icon={
                 <KoFi
                   fill={iconColor}
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
                 />
-              )}
+              }
               variant='outline'
               as='a'
               href='https://ko-fi.com/lawand'
@@ -125,7 +121,7 @@ const Contact: React.FC = () => {
           </Flex>
         </Box>
       </Shell>
-    </div>
+    </Page>
   )
 }
 export default Contact

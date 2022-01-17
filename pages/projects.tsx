@@ -1,18 +1,15 @@
 import React from 'react'
 import { Heading, useColorModeValue, VStack } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
-import Head from 'next/head'
 import Project from '@/components/Project'
 import projects from 'data/projects'
+import Page from '@/components/Page'
 
 const Projects: React.FC = () => {
   const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
 
   return (
-    <div>
-      <Head>
-        <title>lwnd</title>
-      </Head>
+    <Page name='Projects' path='/projects'>
       <Shell>
         <Heading color={headingColor} mb={8}>
           Projects
@@ -23,7 +20,7 @@ const Projects: React.FC = () => {
           ))}
         </VStack>
       </Shell>
-    </div>
+    </Page>
   )
 }
 export default Projects
