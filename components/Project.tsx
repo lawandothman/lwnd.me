@@ -1,10 +1,5 @@
 import { IProject } from 'types'
-import {
-  Box,
-  HStack,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, HStack, Text, useColorModeValue } from '@chakra-ui/react'
 
 import React from 'react'
 import NextChakraLink from './NextChakraLink'
@@ -34,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <Text>{project.title}</Text>
         )}
 
-          <ViewSource source={project.source}>View source</ViewSource>
+        <ViewSource source={project.source}>View source</ViewSource>
       </HStack>
 
       <Text fontWeight='light' color={textColor}>

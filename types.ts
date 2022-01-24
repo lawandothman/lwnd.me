@@ -1,3 +1,5 @@
+import { ReactElement } from 'react'
+
 export interface IProject {
   title: string
   source: string
@@ -9,5 +11,5 @@ export interface IStack {
   name: string
   description: string
   url: string
-  icon: any
+  icon: ReactElement<any, any> | null
 }
