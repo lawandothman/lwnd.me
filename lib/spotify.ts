@@ -1,8 +1,6 @@
-import querystring from 'querystring'
-
-const clientId = process.env.SPOTIFY_CLIENT_ID
-const clientSecret = process.env.SPOTIFY_CLIENT_SECRET
-const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN
+const clientId = process.env.SPOTIFY_CLIENT_ID as string
+const clientSecret = process.env.SPOTIFY_CLIENT_SECRET as string
+const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN as string
 const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64')
 
 const ACCESS_TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
@@ -15,7 +13,7 @@ const getAccessToken = async () => {
       Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: querystring.stringify({
+    body: new URLSearchParams({
       grant_type: 'refresh_token',
       refresh_token: refreshToken,
     }),
