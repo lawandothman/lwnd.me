@@ -11,6 +11,22 @@ const theme = extendTheme({
   fonts: {
     body: 'Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
   },
+  semanticTokens: {
+    colors: {
+      heading: {
+        default: 'blackAlpha.900',
+        _dark: 'whiteAlpha.900',
+      },
+      icon: {
+        default: 'blackAlpha.900',
+        _dark: 'whiteAlpha.900',
+      },
+      text: {
+        default: 'blackAlpha.900',
+        _dark: 'whiteAlpha.700',
+      },
+    },
+  },
   styles: {
     global: (props: StyleFunctionProps) => ({
       html: {

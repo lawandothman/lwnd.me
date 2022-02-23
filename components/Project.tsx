@@ -1,5 +1,5 @@
 import { IProject } from 'types'
-import { Box, HStack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, HStack, Text } from '@chakra-ui/react'
 
 import React from 'react'
 import NextChakraLink from './NextChakraLink'
@@ -10,8 +10,6 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
-  const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
-
   return (
     <Box fontWeight='bold' key={project.title}>
       <HStack mb={2} spacing={4}>
@@ -32,7 +30,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         <ViewSource source={project.source}>View source</ViewSource>
       </HStack>
 
-      <Text fontWeight='light' color={textColor}>
+      <Text fontWeight='light' color='text'>
         {project.description}
       </Text>
     </Box>

@@ -1,30 +1,19 @@
 import React from 'react'
-import {
-  Box,
-  Flex,
-  Heading,
-  IconButton,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react'
 import Shell from '@/components/Shell'
 import { Email, GitHub, KoFi, LinkedIn, Twitter } from '@/components/Icons'
 import Page from '@/components/Page'
 import { NextPage } from 'next'
 
 const Contact: NextPage = () => {
-  const headingColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
-  const iconColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
-  const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
-
   return (
     <Page name='Contact' path='/contact'>
       <Shell>
         <Box>
-          <Heading color={headingColor} mb={4}>
+          <Heading color='heading' mb={4}>
             Contact me
           </Heading>
-          <Text color={textColor} mb={2} fontWeight='medium'>
+          <Text color='text' mb={2} fontWeight='medium'>
             Have a question or want to work together?
           </Text>
 
@@ -34,12 +23,7 @@ const Contact: NextPage = () => {
               borderWidth={['0px', '1px']}
               p={4}
               icon={
-                <Email
-                  fill={iconColor}
-                  width='30'
-                  height='30'
-                  viewBox='0 0 58 58'
-                />
+                <Email fill='icon' width='30' height='30' viewBox='0 0 58 58' />
               }
               variant='outline'
               as='a'
@@ -52,7 +36,7 @@ const Contact: NextPage = () => {
               p={4}
               icon={
                 <GitHub
-                  fill={iconColor}
+                  fill='icon'
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
@@ -70,7 +54,7 @@ const Contact: NextPage = () => {
               p={4}
               icon={
                 <LinkedIn
-                  fill={iconColor}
+                  fill='icon'
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
@@ -88,7 +72,7 @@ const Contact: NextPage = () => {
               p={4}
               icon={
                 <Twitter
-                  fill={iconColor}
+                  fill='icon'
                   width='30'
                   height='30'
                   viewBox='0 0 58 58'
@@ -105,12 +89,7 @@ const Contact: NextPage = () => {
               borderWidth={['0px', '1px']}
               p={4}
               icon={
-                <KoFi
-                  fill={iconColor}
-                  width='30'
-                  height='30'
-                  viewBox='0 0 58 58'
-                />
+                <KoFi fill='icon' width='30' height='30' viewBox='0 0 58 58' />
               }
               variant='outline'
               as='a'

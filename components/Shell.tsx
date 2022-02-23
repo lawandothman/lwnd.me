@@ -13,8 +13,6 @@ import NowPlaying from './NowPlaying'
 
 const Shell: React.FC = ({ children }) => {
   const bg = useColorModeValue('white', 'black')
-  const color = useColorModeValue('blackAlpha.900', 'whiteAlpha.900')
-  const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.700')
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -36,14 +34,14 @@ const Shell: React.FC = ({ children }) => {
                 onClick={toggleColorMode}
                 _focus={{ boxShadow: 'none' }}
                 aria-label='Dark Mode'
-                icon={<MoonIcon color={color} />}
+                icon={<MoonIcon color='icon' />}
               />
             ) : (
               <IconButton
                 onClick={toggleColorMode}
                 _focus={{ boxShadow: 'none' }}
                 aria-label='Light Mode'
-                icon={<SunIcon color={color} />}
+                icon={<SunIcon color='icon' />}
               />
             )}
           </Flex>
@@ -52,7 +50,7 @@ const Shell: React.FC = ({ children }) => {
             alignItems='center'
             justifyContent='space-between'
             w='350px'
-            color={color}
+            color='heading'
           >
             <NextChakraLink
               _hover={{ textDecoration: 'none' }}
@@ -99,14 +97,10 @@ const Shell: React.FC = ({ children }) => {
       </Flex>
 
       <Box as='footer' px={8} maxWidth={590} mx='auto' mt={20}>
-        <Divider
-          w='full'
-          color='black'
-          orientation='horizontal'
-        />
+        <Divider w='full' color='black' orientation='horizontal' />
         <Box my={4}>
           <NowPlaying />
-          <Text fontSize='xs' color={textColor}>
+          <Text fontSize='xs' color='text'>
             Built with Next.js and Vercel
           </Text>
         </Box>
