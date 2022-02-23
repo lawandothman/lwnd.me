@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue, Text, Icon } from '@chakra-ui/react'
+import { Flex, useColorModeValue, Text } from '@chakra-ui/react'
 import React from 'react'
 import { IStack } from '../types'
 
@@ -21,10 +21,7 @@ const StackItem: React.FC<StackItemProps> = ({ stack }) => {
       transitionDuration='0.25s'
       _hover={{ backgroundColor }}
     >
-      <Icon fill='icon' viewBox='0 0 58 58' w='58' height='58'>
-        {stack.icon}
-      </Icon>
-
+      {stack.icon}
       <Flex direction='column' ml={6}>
         <Text fontWeight='medium'>{stack.name}</Text>
         <Text fontSize='sm' fontWeight='light' color='text'>
