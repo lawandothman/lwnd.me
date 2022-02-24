@@ -1,21 +1,13 @@
-import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import {
-  Box,
-  Flex,
-  useColorMode,
-  IconButton,
-  Divider,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Flex, Divider, Text } from '@chakra-ui/react'
+import navbarItems from 'data/navbarItems'
+import ColorModeTrigger from './ColorModeTrigger'
 import NextChakraLink from './NextChakraLink'
 import NowPlaying from './NowPlaying'
 
 const Shell: React.FC = ({ children }) => {
-  const { colorMode, toggleColorMode } = useColorMode()
-
   return (
     <Box>
-      <Flex as='nav'  w='full'>
+      <Flex as='nav' w='full'>
         <Flex
           alignItems='center'
           justifyContent='space-between'
@@ -25,58 +17,23 @@ const Shell: React.FC = ({ children }) => {
           maxW='1250px'
           w='full'
         >
-          <Flex mr={4}>
-            {colorMode === 'light' ? (
-              <IconButton
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-                aria-label='Dark Mode'
-                icon={<MoonIcon color='icon' />}
-              />
-            ) : (
-              <IconButton
-                onClick={toggleColorMode}
-                _focus={{ boxShadow: 'none' }}
-                aria-label='Light Mode'
-                icon={<SunIcon color='icon' />}
-              />
-            )}
-          </Flex>
-
+          <ColorModeTrigger />
           <Flex
             alignItems='center'
             justifyContent='space-between'
             w='350px'
             color='heading'
           >
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/projects'
-            >
-              Projects
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/stack'
-            >
-              Stack
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/contact'
-            >
-              Contact
-            </NextChakraLink>
-            <NextChakraLink
-              _hover={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              href='/'
-            >
-              Home
-            </NextChakraLink>
+            {navbarItems.map((item) => (
+              <NextChakraLink
+                _hover={{ textDecoration: 'none' }}
+                _focus={{ boxShadow: 'none' }}
+                href={item.href}
+                key={item.title}
+              >
+                {item.title}
+              </NextChakraLink>
+            ))}
           </Flex>
         </Flex>
       </Flex>
