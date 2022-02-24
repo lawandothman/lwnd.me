@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   useColorMode,
-  useColorModeValue,
   IconButton,
   Divider,
   Text,
@@ -12,15 +11,13 @@ import NextChakraLink from './NextChakraLink'
 import NowPlaying from './NowPlaying'
 
 const Shell: React.FC = ({ children }) => {
-  const bg = useColorModeValue('white', 'black')
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box backgroundColor={bg}>
-      <Flex as='nav' backgroundColor={bg} w='full'>
+    <Box>
+      <Flex as='nav'  w='full'>
         <Flex
           alignItems='center'
-          backgroundColor={bg}
           justifyContent='space-between'
           p={8}
           mx='auto'
