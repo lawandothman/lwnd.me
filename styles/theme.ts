@@ -7,7 +7,7 @@ const config: ThemeConfig = {
 }
 
 const theme = extendTheme({
-  ...config,
+  config,
   fonts: {
     body: 'Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
   },
@@ -16,6 +16,10 @@ const theme = extendTheme({
       heading: {
         default: 'blackAlpha.900',
         _dark: 'whiteAlpha.900',
+      },
+      text: {
+        default: 'blackAlpha.900',
+        _dark: 'whiteAlpha.700',
       },
       icon: {
         default: 'blackAlpha.900',
@@ -28,10 +32,6 @@ const theme = extendTheme({
       invertedIconHover: {
         default: 'gray.100',
         _dark: 'whiteAlpha.200',
-      },
-      text: {
-        default: 'blackAlpha.900',
-        _dark: 'whiteAlpha.700',
       },
     },
   },
