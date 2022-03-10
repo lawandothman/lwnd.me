@@ -16,6 +16,8 @@ const ColorModeTrigger = () => {
           <SunIcon color='icon' />
         )
       }
+      variant='ghost'
+      mr={4}
     />
   )
 }

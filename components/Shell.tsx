@@ -11,7 +11,7 @@ const Shell: React.FC = ({ children }) => {
         <Flex
           alignItems='center'
           justifyContent='space-between'
-          p={8}
+          p={[6, 8]}
           mx='auto'
           mb={8}
           maxW='1250px'
@@ -43,14 +43,14 @@ const Shell: React.FC = ({ children }) => {
         mx='auto'
         maxWidth={590}
         direction='column'
-        px={8}
+        px={[6, 8]}
         overflow='auto'
         mb={6}
       >
         {children}
       </Flex>
 
-      <Box as='footer' px={8} maxWidth={590} mx='auto' mt={20}>
+      <Box as='footer' px={[6, 8]} maxWidth={590} mx='auto' mt={20}>
         <Divider w='full' color='black' orientation='horizontal' />
         <Box my={4}>
           <NowPlaying />
