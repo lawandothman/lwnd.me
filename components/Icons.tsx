@@ -1,4 +1,4 @@
-import { Icon, IconProps, useColorModeValue } from '@chakra-ui/react'
+import { Icon, IconProps } from '@chakra-ui/react'
 
 export const GitHub = (props: IconProps) => (
   <Icon {...props}>
