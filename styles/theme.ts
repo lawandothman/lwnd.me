@@ -25,14 +25,6 @@ const theme = extendTheme({
         default: 'blackAlpha.900',
         _dark: 'whiteAlpha.900',
       },
-      invertedIcon: {
-        default: 'whiteAlpha.900',
-        _dark: 'blackAlpha.900',
-      },
-      invertedIconHover: {
-        default: 'gray.100',
-        _dark: 'whiteAlpha.200',
-      },
     },
   },
   styles: {

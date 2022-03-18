@@ -4,6 +4,7 @@ import {
   Figma,
   NextJs,
   Notion,
+  Typescript,
   Vercel,
   VSCode,
 } from '@/components/Icons'
@@ -15,6 +16,12 @@ const stack: IStack[] = [
     description: 'My code editor of choice',
     url: 'https://code.visualstudio.com/',
     icon: <VSCode viewBox='0 0 58 58' width='58' height='58' />,
+  },
+  {
+    name: 'TypeScript',
+    description: 'JavaScript but with no surprises',
+    url: 'https://www.typescriptlang.org/',
+    icon: <Typescript viewBox='-20 0 550 550' width='58' height='58' />,
   },
   {
     name: 'Next.js',
@@ -32,16 +39,7 @@ const stack: IStack[] = [
     name: 'Chakra UI',
     description: 'The best React component-based library',
     url: 'https://chakra-ui.com/',
-    icon: (
-      <Chakra
-        viewBox='0 0 58 58'
-        width='58'
-        height='58'
-        fill='#58c9c7'
-        backgroundColor='invertedIcon'
-        _groupHover={{ backgroundColor: 'invertedIconHover' }}
-      />
-    ),
+    icon: <Chakra viewBox='0 0 58 58' width='58' height='58' fill='#58c9c7' />,
   },
   {
     name: 'Vercel',
