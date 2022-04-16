@@ -1,22 +1,15 @@
 {
   "extends": [
-    "next"
+    "next",
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
-    ]
+    "prettier/prettier": "error"
   }
 }
