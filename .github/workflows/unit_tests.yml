@@ -1,4 +1,4 @@
-name: Unit Core Tests
+name: Unit Tests
 
 on: push
 
@@ -6,7 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Cache Node Modules
         uses: actions/cache@v2
         env:

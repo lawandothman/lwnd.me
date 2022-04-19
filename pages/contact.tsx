@@ -2,7 +2,9 @@ import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import React from 'react'
 
-import { Email, GitHub, KoFi, LinkedIn, Page, Shell, Twitter } from 'components'
+import { Page, Shell } from 'components'
+
+import contact from 'data/contact'
 
 const Contact: NextPage = () => {
 	return (
@@ -17,85 +19,20 @@ const Contact: NextPage = () => {
 					</Text>
 
 					<Flex mt={12} direction='row' justifyContent='space-between'>
-						<IconButton
-							aria-label='Email'
-							borderWidth={['0px', '1px']}
-							p={4}
-							icon={
-								<Email fill='icon' width='30' height='30' viewBox='0 0 58 58' />
-							}
-							variant='outline'
-							as='a'
-							href='mailto:lwnd@pm.me'
-							_focus={{ boxShadow: 'none' }}
-						/>
-						<IconButton
-							aria-label='GitHub'
-							borderWidth={['0px', '1px']}
-							p={4}
-							icon={
-								<GitHub
-									fill='icon'
-									width='30'
-									height='30'
-									viewBox='0 0 58 58'
-								/>
-							}
-							variant='outline'
-							as='a'
-							href='https://github.com/lawandothman'
-							target='_blank'
-							_focus={{ boxShadow: 'none' }}
-						/>
-						<IconButton
-							aria-label='LinkedIn'
-							borderWidth={['0px', '1px']}
-							p={4}
-							icon={
-								<LinkedIn
-									fill='icon'
-									width='30'
-									height='30'
-									viewBox='0 0 58 58'
-								/>
-							}
-							variant='outline'
-							as='a'
-							href='https://www.linkedin.com/in/lawandothman/'
-							target='_blank'
-							_focus={{ boxShadow: 'none' }}
-						/>
-						<IconButton
-							aria-label='Twitter'
-							borderWidth={['0px', '1px']}
-							p={4}
-							icon={
-								<Twitter
-									fill='icon'
-									width='30'
-									height='30'
-									viewBox='0 0 58 58'
-								/>
-							}
-							variant='outline'
-							as='a'
-							href='https://twitter.com/lwndothman'
-							target='_blank'
-							_focus={{ boxShadow: 'none' }}
-						/>
-						<IconButton
-							aria-label='Ko-Fi'
-							borderWidth={['0px', '1px']}
-							p={4}
-							icon={
-								<KoFi fill='icon' width='30' height='30' viewBox='0 0 58 58' />
-							}
-							variant='outline'
-							as='a'
-							href='https://ko-fi.com/lawand'
-							target='_blank'
-							_focus={{ boxShadow: 'none' }}
-						/>
+						{contact.map((contactItem) => (
+							<IconButton
+								key={contactItem.name}
+								aria-label={contactItem.name}
+								icon={contactItem.icon}
+								variant='outline'
+								as='a'
+								href={contactItem.link}
+								target={contactItem.isExternal ? '_blank' : '_self'}
+								borderWidth={['0px', '1px']}
+								p={4}
+								_focus={{ boxShadow: 'none' }}
+							/>
+						))}
 					</Flex>
 				</Box>
 			</Shell>
