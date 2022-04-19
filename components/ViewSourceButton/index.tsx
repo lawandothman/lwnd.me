@@ -4,6 +4,7 @@ import { GitHub, NextChakraLink } from 'components'
 
 interface ViewSourceProps {
 	source: string
+	children: React.ReactNode
 }
 
 export const ViewSourceButton: React.FC<ViewSourceProps> = ({

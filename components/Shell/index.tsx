@@ -2,7 +2,11 @@ import { Box, Flex } from '@chakra-ui/react'
 
 import { Footer, NavBar } from 'components'
 
-export const Shell: React.FC = ({ children }) => {
+interface ShellProps {
+	children?: React.ReactNode
+}
+
+export const Shell: React.FC<ShellProps> = ({ children }) => {
 	return (
 		<Box>
 			<NavBar />

@@ -8,7 +8,6 @@ describe('Shell', () => {
 		render(<Shell />)
 
 		const navigation = screen.getByRole('navigation')
-		screen.debug()
 		expect(navigation).toBeInTheDocument()
 	})
 

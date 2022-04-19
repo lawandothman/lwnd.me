@@ -4,6 +4,7 @@ import React from 'react'
 interface PageProps {
 	name: string
 	path: string
+	children: React.ReactNode
 }
 export const Page: React.FC<PageProps> = ({ name, path, children }) => {
 	const title = `lwnd – ${name}`
