@@ -11,6 +11,7 @@ export const ViewSourceButton: React.FC<ViewSourceProps> = ({
 	source,
 }) => (
 	<NextChakraLink
+		as='button'
 		href={source}
 		isExternal
 		px='8px'

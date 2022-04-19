@@ -14,7 +14,7 @@ const Stack: NextPage = () => {
 					Stack
 				</Heading>
 				<Text color='text' mb={8} fontWeight='medium'>
-					My favourite tools and software.
+					My favorite tools and software.
 				</Text>
 				<VStack spacing={4}>
 					{stack.map((_stack) => (
