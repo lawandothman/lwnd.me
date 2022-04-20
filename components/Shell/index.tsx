@@ -1,6 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react'
 
-import { Footer, NavBar } from 'components'
+import { Footer, Navbar } from 'components'
 
 interface ShellProps {
 	children?: React.ReactNode
@@ -9,7 +9,7 @@ interface ShellProps {
 export const Shell: React.FC<ShellProps> = ({ children }) => {
 	return (
 		<Box>
-			<NavBar />
+			<Navbar />
 
 			<Flex
 				as='main'

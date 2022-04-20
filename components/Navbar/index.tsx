@@ -21,7 +21,7 @@ const navbarItems = [
 	},
 ]
 
-export const NavBar = () => {
+export const Navbar = () => {
 	return (
 		<Flex as='nav' w='full'>
 			<Flex
