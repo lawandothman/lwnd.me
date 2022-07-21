@@ -22,7 +22,7 @@ const contact = [
 	{
 		name: 'Twitter',
 		icon: <Twitter fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
-		link: 'https://twitter.com/lawandothman',
+		link: 'https://twitter.com/lwndothman',
 		isExternal: true,
 	},
 	{
