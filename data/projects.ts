@@ -2,6 +2,11 @@ import { IProject } from 'types'
 
 const projects: IProject[] = [
 	{
+		title: 'ミル Miru',
+		description: 'Work In Progress - Remove the drama from movie night',
+		url: 'https://miru-chi.vercel.app',
+	},
+	{
 		title: 'Pokédex',
 		source: 'https://github.com/lawandothman/pokedex',
 		description: 'My first project in my journey to learn web development',

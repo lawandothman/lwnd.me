@@ -25,8 +25,11 @@ export const Project: React.FC<ProjectProps> = ({ project }) => {
 				) : (
 					<Text>{project.title}</Text>
 				)}
-
-				<ViewSourceButton source={project.source}>View source</ViewSourceButton>
+				{project.source && (
+					<ViewSourceButton source={project.source}>
+						View source
+					</ViewSourceButton>
+				)}
 			</HStack>
 
 			<Text fontWeight='light' color='text'>

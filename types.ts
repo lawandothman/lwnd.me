@@ -1,6 +1,6 @@
 export interface IProject {
 	title: string
-	source: string
+	source?: string
 	description: string
 	url?: string
 }
