@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from '@chakra-ui/react'
+import { Box, HStack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { IProject } from 'types'
 
@@ -29,6 +29,11 @@ export const Project: React.FC<ProjectProps> = ({ project }) => {
 					<ViewSourceButton source={project.source}>
 						View source
 					</ViewSourceButton>
+				)}
+				{project.inProgress && (
+					<Tag variant='subtle' rounded='md' px={3} py={0} colorScheme='gray'>
+						Work in Progress
+					</Tag>
 				)}
 			</HStack>
 
