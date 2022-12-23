@@ -35,7 +35,9 @@ describe('Projects', () => {
 
 			expect(projectDescription).toBeInTheDocument()
 			expect(projectTitle).toBeInTheDocument()
-			expect(viewSourceButtons).toHaveLength(projects.length)
+			expect(viewSourceButtons).toHaveLength(
+				projects.filter((p) => !!p.source).length
+			)
 		})
 	})
 })
