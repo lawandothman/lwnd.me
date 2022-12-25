@@ -11,7 +11,6 @@ const projects: IProject[] = [
 		title: 'Pokédex',
 		source: 'https://github.com/lawandothman/pokedex',
 		description: 'My first project in my journey to learn web development',
-		url: 'https://law-pokedex.herokuapp.com/',
 	},
 	{
 		title: 'Litter',
@@ -23,7 +22,6 @@ const projects: IProject[] = [
 		title: 'Shopcart',
 		source: 'https://github.com/lawandothman/shopcart',
 		description: 'Ecommerce plarform with PayPal integration',
-		url: 'https://shopcart-lwnd.herokuapp.com/',
 	},
 	{
 		title: 'Fast Feedback',
