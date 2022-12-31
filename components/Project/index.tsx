@@ -30,9 +30,9 @@ export const Project: React.FC<ProjectProps> = ({ project }) => {
 						View source
 					</ViewSourceButton>
 				)}
-				{project.inProgress && (
-					<Tag variant='subtle' rounded='md' px={3} py={0} colorScheme='gray'>
-						Work in Progress
+				{project.status && (
+					<Tag variant='subtle' rounded='md' px={3} py={0} colorScheme='red'>
+						{project.status}
 					</Tag>
 				)}
 			</HStack>

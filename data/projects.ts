@@ -5,7 +5,7 @@ const projects: IProject[] = [
 		title: 'ミル Miru',
 		description: 'Remove the drama from movie night ',
 		url: 'https://miru-chi.vercel.app',
-		inProgress: true,
+		status: 'ALPHA',
 	},
 	{
 		title: 'Pokédex',

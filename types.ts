@@ -3,7 +3,7 @@ export interface IProject {
 	source?: string
 	description: string
 	url?: string
-	inProgress?: boolean
+	status?: string
 }
 
 export interface IStack {
