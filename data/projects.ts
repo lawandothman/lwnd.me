@@ -3,8 +3,8 @@ import { IProject } from 'types'
 const projects: IProject[] = [
 	{
 		title: 'ミル Miru',
-		description: 'Remove the drama from movie night ',
-		url: 'https://miru-chi.vercel.app',
+		description: 'Remove the drama from movie night',
+		url: 'https://miru.space',
 		status: 'ALPHA',
 	},
 	{
