@@ -28,7 +28,7 @@ const contact = [
 	{
 		name: 'Kofi',
 		icon: <KoFi fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
-		link: 'https://ko-fi.com/lawandothman',
+		link: 'https://ko-fi.com/lawand',
 		isExternal: true,
 	},
 ]
