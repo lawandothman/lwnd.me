@@ -10,7 +10,7 @@ const projects: IProject[] = [
 	{
 		title: 'Pokédex',
 		source: 'https://github.com/lawandothman/pokedex',
-		description: 'My first project in my journey to learn web development',
+		description: "Gotta catch 'em all!",
 	},
 	{
 		title: 'Litter',
@@ -21,7 +21,7 @@ const projects: IProject[] = [
 	{
 		title: 'Shopcart',
 		source: 'https://github.com/lawandothman/shopcart',
-		description: 'Ecommerce plarform with PayPal integration',
+		description: 'Ecommerce platform with PayPal integration',
 	},
 	{
 		title: 'Fast Feedback',
