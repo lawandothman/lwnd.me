@@ -171,3 +171,216 @@ export const Typescript = (props: IconProps) => {
 		</Icon>
 	)
 }
+
+export const Rust = (props: IconProps, fill: string) => {
+	return (
+		<Icon {...props}>
+			<g id='logo' transform='translate(53, 53)'>
+				<path
+					id='r'
+					transform='translate(0.5, 0.5)'
+					stroke={fill}
+					stroke-width='1'
+					stroke-linejoin='round'
+					d='     M -9,-15 H 4 C 12,-15 12,-7 4,-7 H -9 Z     M -40,22 H 0 V 11 H -9 V 3 H 1 C 12,3 6,22 15,22 H 40     V 3 H 34 V 5 C 34,13 25,12 24,7 C 23,2 19,-2 18,-2 C 33,-10 24,-26 12,-26 H -35     V -15 H -25 V 11 H -40 Z'
+				/>
+				<g id='gear' mask='url(#holes)'>
+					<circle r='43' fill='none' stroke='black' stroke-width='9' />
+					<g id='cogs'>
+						<polygon
+							id='cog'
+							stroke={fill}
+							stroke-width='3'
+							stroke-linejoin='round'
+							points='46,3 51,0 46,-3'
+						/>
+						<use xlinkHref='#cog' transform='rotate(11.25)' />
+						<use xlinkHref='#cog' transform='rotate(22.50)' />
+						<use xlinkHref='#cog' transform='rotate(33.75)' />
+						<use xlinkHref='#cog' transform='rotate(45.00)' />
+						<use xlinkHref='#cog' transform='rotate(56.25)' />
+						<use xlinkHref='#cog' transform='rotate(67.50)' />
+						<use xlinkHref='#cog' transform='rotate(78.75)' />
+						<use xlinkHref='#cog' transform='rotate(90.00)' />
+						<use xlinkHref='#cog' transform='rotate(101.25)' />
+						<use xlinkHref='#cog' transform='rotate(112.50)' />
+						<use xlinkHref='#cog' transform='rotate(123.75)' />
+						<use xlinkHref='#cog' transform='rotate(135.00)' />
+						<use xlinkHref='#cog' transform='rotate(146.25)' />
+						<use xlinkHref='#cog' transform='rotate(157.50)' />
+						<use xlinkHref='#cog' transform='rotate(168.75)' />
+						<use xlinkHref='#cog' transform='rotate(180.00)' />
+						<use xlinkHref='#cog' transform='rotate(191.25)' />
+						<use xlinkHref='#cog' transform='rotate(202.50)' />
+						<use xlinkHref='#cog' transform='rotate(213.75)' />
+						<use xlinkHref='#cog' transform='rotate(225.00)' />
+						<use xlinkHref='#cog' transform='rotate(236.25)' />
+						<use xlinkHref='#cog' transform='rotate(247.50)' />
+						<use xlinkHref='#cog' transform='rotate(258.75)' />
+						<use xlinkHref='#cog' transform='rotate(270.00)' />
+						<use xlinkHref='#cog' transform='rotate(281.25)' />
+						<use xlinkHref='#cog' transform='rotate(292.50)' />
+						<use xlinkHref='#cog' transform='rotate(303.75)' />
+						<use xlinkHref='#cog' transform='rotate(315.00)' />
+						<use xlinkHref='#cog' transform='rotate(326.25)' />
+						<use xlinkHref='#cog' transform='rotate(337.50)' />
+						<use xlinkHref='#cog' transform='rotate(348.75)' />
+					</g>
+					<g id='mounts'>
+						<polygon
+							id='mount'
+							stroke={fill}
+							stroke-width='6'
+							stroke-linejoin='round'
+							points='-7,-42 0,-35 7,-42'
+						/>
+						<use xlinkHref='#mount' transform='rotate(72)' />
+						<use xlinkHref='#mount' transform='rotate(144)' />
+						<use xlinkHref='#mount' transform='rotate(216)' />
+						<use xlinkHref='#mount' transform='rotate(288)' />
+					</g>
+				</g>
+				<mask id='holes'>
+					<rect x='-60' y='-60' width='120' height='120' fill='white' />
+					<circle id='hole' cy='-40' r='3' />
+					<use xlinkHref='#hole' transform='rotate(72)' />
+					<use xlinkHref='#hole' transform='rotate(144)' />
+					<use xlinkHref='#hole' transform='rotate(216)' />
+					<use xlinkHref='#hole' transform='rotate(288)' />
+				</mask>
+			</g>
+		</Icon>
+	)
+}
+
+export const GraphQL = (props: IconProps) => {
+	return (
+		<Icon {...props}>
+			<g xmlns='http://www.w3.org/2000/svg'>
+				<g>
+					<g>
+						<rect
+							x='122'
+							y='-0.4'
+							transform='matrix(-0.866 -0.5 0.5 -0.866 163.3196 363.3136)'
+							fill='#E535AB'
+							width='16.6'
+							height='320.3'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='39.8'
+							y='272.2'
+							fill='#E535AB'
+							width='320.3'
+							height='16.6'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='37.9'
+							y='312.2'
+							transform='matrix(-0.866 -0.5 0.5 -0.866 83.0693 663.3409)'
+							fill='#E535AB'
+							width='185'
+							height='16.6'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='177.1'
+							y='71.1'
+							transform='matrix(-0.866 -0.5 0.5 -0.866 463.3409 283.0693)'
+							fill='#E535AB'
+							width='185'
+							height='16.6'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='122.1'
+							y='-13'
+							transform='matrix(-0.5 -0.866 0.866 -0.5 126.7903 232.1221)'
+							fill='#E535AB'
+							width='16.6'
+							height='185'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='109.6'
+							y='151.6'
+							transform='matrix(-0.5 -0.866 0.866 -0.5 266.0828 473.3766)'
+							fill='#E535AB'
+							width='320.3'
+							height='16.6'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x='52.5' y='107.5' fill='#E535AB' width='16.6' height='185' />
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='330.9'
+							y='107.5'
+							fill='#E535AB'
+							width='16.6'
+							height='185'
+						/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect
+							x='262.4'
+							y='240.1'
+							transform='matrix(-0.5 -0.866 0.866 -0.5 126.7953 714.2875)'
+							fill='#E535AB'
+							width='14.5'
+							height='160.9'
+						/>
+					</g>
+				</g>
+				<path
+					fill='#E535AB'
+					d='M369.5,297.9c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8   C373.5,259.9,379.2,281.2,369.5,297.9'
+				/>
+				<path
+					fill='#E535AB'
+					d='M90.9,137c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8   C94.8,99,100.5,120.3,90.9,137'
+				/>
+				<path
+					fill='#E535AB'
+					d='M30.5,297.9c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7   C61.4,320.3,40.1,314.6,30.5,297.9'
+				/>
+				<path
+					fill='#E535AB'
+					d='M309.1,137c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7   C340.1,159.4,318.7,153.7,309.1,137'
+				/>
+				<path
+					fill='#E535AB'
+					d='M200,395.8c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9   C234.9,380.1,219.3,395.8,200,395.8'
+				/>
+				<path
+					fill='#E535AB'
+					d='M200,74c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9   C234.9,58.4,219.3,74,200,74'
+				/>
+			</g>
+		</Icon>
+	)
+}
