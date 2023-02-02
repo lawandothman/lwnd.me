@@ -35,7 +35,7 @@ const stack: IStack[] = [
 	{
 		name: 'GraphQL',
 		description: 'Ask for what you need and get exactly that',
-		url: 'https://www.rust-lang.org/',
+		url: 'https://graphql.org/',
 		icon: <GraphQL viewBox='0 4 395 395' width='58' height='58' />,
 	},
 	{
