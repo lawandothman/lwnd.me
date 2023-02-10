@@ -11,6 +11,7 @@ const projects: IProject[] = [
 		title: 'Pokédex',
 		source: 'https://github.com/lawandothman/pokedex',
 		description: "Gotta catch 'em all!",
+		url: 'https://pokedex-lwnd.up.railway.app',
 	},
 	{
 		title: 'Litter',
