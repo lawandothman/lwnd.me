@@ -11,9 +11,9 @@ const Home: NextPage = () => {
 				Hey, I&apos;m Lawand Othman
 			</Heading>
 			<Text as='p' color='text' mb={2} fontWeight='medium'>
-				I&apos;m a developer based in London, UK. You&apos;ve found my personal
-				slice of the internet where I share all the beautiful and fun stuff
-				I&apos;m working on.
+				I&apos;m a software developer based in London, UK. You&apos;ve found my
+				personal slice of the internet where I share all the beautiful and fun
+				stuff I&apos;m working on.
 			</Text>
 		</Shell>
 	)

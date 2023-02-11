@@ -180,17 +180,17 @@ export const Rust = (props: IconProps, fill: string) => {
 					id='r'
 					transform='translate(0.5, 0.5)'
 					stroke={fill}
-					stroke-width='1'
+					strokeWidth='1'
 					stroke-linejoin='round'
 					d='     M -9,-15 H 4 C 12,-15 12,-7 4,-7 H -9 Z     M -40,22 H 0 V 11 H -9 V 3 H 1 C 12,3 6,22 15,22 H 40     V 3 H 34 V 5 C 34,13 25,12 24,7 C 23,2 19,-2 18,-2 C 33,-10 24,-26 12,-26 H -35     V -15 H -25 V 11 H -40 Z'
 				/>
 				<g id='gear' mask='url(#holes)'>
-					<circle r='43' fill='none' stroke='black' stroke-width='9' />
+					<circle r='43' fill='none' stroke='black' strokeWidth='9' />
 					<g id='cogs'>
 						<polygon
 							id='cog'
 							stroke={fill}
-							stroke-width='3'
+							strokeWidth='3'
 							stroke-linejoin='round'
 							points='46,3 51,0 46,-3'
 						/>
@@ -230,7 +230,7 @@ export const Rust = (props: IconProps, fill: string) => {
 						<polygon
 							id='mount'
 							stroke={fill}
-							stroke-width='6'
+							strokeWidth='6'
 							stroke-linejoin='round'
 							points='-7,-42 0,-35 7,-42'
 						/>
