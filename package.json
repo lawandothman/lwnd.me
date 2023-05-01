@@ -12,8 +12,8 @@
 		"prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
 	},
 	"dependencies": {
-		"@chakra-ui/icons": "^2.0.17",
-		"@chakra-ui/react": "^2.4.9",
+		"@chakra-ui/icons": "^2.0.19",
+		"@chakra-ui/react": "^2.6.0",
 		"@emotion/react": "^11",
 		"@emotion/styled": "^11",
 		"@fontsource/inter": "^4.5.14",
@@ -41,7 +41,7 @@
 		"jest-environment-jsdom": "^29.4.3",
 		"lint-staged": ">=13",
 		"prettier": "^2.8.4",
-		"typescript": "^5.0.0"
+		"typescript": "^5.0.4"
 	},
 	"lint-staged": {
 		"*.{js,ts,jsx,tsx}": [

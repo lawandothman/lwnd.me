@@ -17,7 +17,7 @@ describe('Home', () => {
 		render(<Home />)
 
 		const paragraph = screen.getByText(
-			/i'm a software developer based in london, uk. you've found my personal slice of the internet where i share all the beautiful and fun stuff i'm working on./i
+			/i'm a software engineer based in london, uk. you've found my personal slice of the internet where i share all the beautiful and fun stuff i'm working on./i
 		)
 
 		expect(paragraph).toBeInTheDocument()
