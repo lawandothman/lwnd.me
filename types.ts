@@ -12,3 +12,10 @@ export interface IStack {
 	url: string
 	icon: React.ReactNode
 }
+
+export interface BlogResponse {
+	blogs: {
+		id: string
+		title: string
+	}[]
+}

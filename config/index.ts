@@ -14,5 +14,6 @@ export const config = {
 	},
 	notion: {
 		NOTION_SECRET: env.get('NOTION_SECRET').required().asString(),
+		NOTION_DATABASE_ID: env.get('NOTION_DATABASE_ID').required().asString(),
 	},
 }
