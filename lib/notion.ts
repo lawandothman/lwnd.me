@@ -34,21 +34,16 @@ class NotionAPI {
 
 		const results = response.results as PageObjectResponse[]
 
-		const blogs = results
-			.map((blog) => {
-				if (
-					blog.properties['page'] &&
-					blog.properties['page'].type === 'title'
-				) {
-					return {
-						id: blog.id,
-						title: blog.properties['page'].title[0].plain_text,
-					}
-				} else {
-					return null
+		const blogs = results.map((blog) => {
+			if (blog.properties['page'] && blog.properties['page'].type === 'title') {
+				return {
+					id: blog.id,
+					title: blog.properties['page'].title[0].plain_text,
 				}
-			})
-			.filter(Boolean)
+			} else {
+				return []
+			}
+		})
 
 		return blogs
 	}
