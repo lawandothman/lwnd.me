@@ -7,6 +7,9 @@ import { Shell } from 'components'
 const Custom404: NextPage = () => {
 	return (
 		<Shell>
+			<Text mb={10} fontWeight='medium' color='text' mx='auto' fontSize='2xl'>
+				¯\_(ツ)_/¯
+			</Text>
 			<Heading color='heading' mb={10}>
 				404 - Page Not Found
 			</Heading>
