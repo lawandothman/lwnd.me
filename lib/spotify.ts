@@ -1,7 +1,12 @@
-const clientId = process.env.SPOTIFY_CLIENT_ID as string
-const clientSecret = process.env.SPOTIFY_CLIENT_SECRET as string
-const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN as string
-const basic = Buffer.from(`${clientId}:${clientSecret}`).toString('base64')
+import { config } from 'config'
+
+const {
+	spotify: { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN },
+} = config
+
+const basic = Buffer.from(
+	`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`
+).toString('base64')
 
 const ACCESS_TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
 const NOW_PLAYING_ENDPOINT =
@@ -16,7 +21,7 @@ const getAccessToken = async () => {
 		},
 		body: new URLSearchParams({
 			grant_type: 'refresh_token',
-			refresh_token: refreshToken,
+			refresh_token: SPOTIFY_REFRESH_TOKEN,
 		}),
 	})
 	return response.json()
