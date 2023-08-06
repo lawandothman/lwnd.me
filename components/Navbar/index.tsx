@@ -2,7 +2,16 @@ import { Flex } from '@chakra-ui/react'
 
 import { ColorModeButton, NextChakraLink } from 'components'
 
-const navbarItems = [
+type NavbarItem = {
+	title: string
+	href: string
+}
+
+const navbarItems: NavbarItem[] = [
+	{
+		title: 'Blog',
+		href: '/blog',
+	},
 	{
 		title: 'Projects',
 		href: '/projects',
