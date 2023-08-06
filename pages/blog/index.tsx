@@ -1,5 +1,6 @@
 import { Heading, ListItem, UnorderedList, VStack } from '@chakra-ui/react'
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react'
 import useSWR from 'swr'
 import { BlogResponse } from 'types'
@@ -19,11 +20,12 @@ const Blog: NextPage = () => {
 				</Heading>
 
 				<VStack spacing={4} align='stretch'>
-					<UnorderedList>
-						{data?.blogs.map((blog) => (
-							<ListItem key={blog.id}>{blog.title}</ListItem>
-						))}
-					</UnorderedList>
+					<UnorderedList></UnorderedList>
+					{data?.blogs.map((blog) => (
+						<Link key={blog.id} href={`/blog/${blog.id}`}>
+							<ListItem>{blog.title}</ListItem>
+						</Link>
+					))}
 				</VStack>
 			</Shell>
 		</Page>
