@@ -7,7 +7,7 @@ type NavbarItem = {
 	href: string
 }
 
-const navbarItems: NavbarItem[] = [
+export const navbarItems: NavbarItem[] = [
 	{
 		title: 'Blog',
 		href: '/blog',

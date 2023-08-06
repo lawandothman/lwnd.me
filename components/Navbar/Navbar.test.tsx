@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 
-import { Navbar } from 'components'
+import { Navbar, navbarItems } from 'components'
 
 describe('Navbar', () => {
 	it('renders', () => {
@@ -13,6 +13,6 @@ describe('Navbar', () => {
 	it('renders a list of navbar items', () => {
 		render(<Navbar />)
 		const navItems = screen.getAllByRole('link')
-		expect(navItems).toHaveLength(4)
+		expect(navItems).toHaveLength(navbarItems.length)
 	})
 })
