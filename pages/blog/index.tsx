@@ -20,12 +20,13 @@ const Blog: NextPage = () => {
 				</Heading>
 
 				<VStack spacing={4} align='stretch'>
-					<UnorderedList></UnorderedList>
-					{data?.blogs.map((blog) => (
-						<Link key={blog.id} href={`/blog/${blog.id}`}>
-							<ListItem>{blog.title}</ListItem>
-						</Link>
-					))}
+					<UnorderedList>
+						{data?.blogs.map((blog) => (
+							<Link key={blog.id} href={`/blog/${blog.id}`}>
+								<ListItem>{blog.title}</ListItem>
+							</Link>
+						))}
+					</UnorderedList>
 				</VStack>
 			</Shell>
 		</Page>
