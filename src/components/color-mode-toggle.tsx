@@ -1,33 +1,37 @@
 'use client'
-import { Button } from './ui/button'
-import { Moon, Sun } from 'lucide-react'
+
+import { Laptop, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
 import { match } from 'ts-pattern'
+import { Button } from './ui/button'
+import { useEffect, useState } from 'react'
 
 export const ColorModeToggle = () => {
 	const [mounted, setMounted] = useState(false)
-	const { setTheme, theme } = useTheme()
+	const { theme, setTheme } = useTheme()
 
 	useEffect(() => setMounted(true), [])
 
 	const toggleColorMode = () => {
-		match(theme)
-			.with('dark', () => setTheme('light'))
+		return match(theme)
 			.with('light', () => setTheme('dark'))
+			.with('dark', () => setTheme('light'))
 	}
 
-	const Icon = () =>
-		match(theme)
+	const renderIcon = () => {
+		return match(theme)
 			.with('light', () => <Moon className='h-4 w-4' />)
 			.with('dark', () => <Sun className='h-4 w-4' />)
 			.otherwise(() => null)
+	}
 
-	if (!mounted) return null
-
-	return (
+	return mounted ? (
 		<Button variant='outline' size='icon' onClick={toggleColorMode}>
-			<Icon />
+			{renderIcon()}
+		</Button>
+	) : (
+		<Button variant='outline' size='icon'>
+			<svg className='h-4 w-4' />
 		</Button>
 	)
 }
