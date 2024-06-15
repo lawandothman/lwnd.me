@@ -4,20 +4,12 @@ import { ColorModeButton, NextChakraLink } from 'components'
 
 const navbarItems = [
 	{
-		title: 'Projects',
-		href: '/projects',
+		title: 'Home',
+		href: '/',
 	},
 	{
 		title: 'Stack',
 		href: '/stack',
-	},
-	{
-		title: 'Contact',
-		href: '/contact',
-	},
-	{
-		title: 'Home',
-		href: '/',
 	},
 ]
 
@@ -37,7 +29,7 @@ export const Navbar = () => {
 				<Flex
 					alignItems='center'
 					justifyContent='space-between'
-					w='350px'
+					w='130px'
 					color='heading'
 				>
 					{navbarItems.map((item) => (

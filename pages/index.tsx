@@ -1,20 +1,38 @@
-import { Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, IconButton, Text } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import React from 'react'
 
 import { Shell } from 'components'
+import contact from 'data/contact'
 
 const Home: NextPage = () => {
 	return (
 		<Shell>
-			<Heading color='heading' mb={4}>
-				Hey, I&apos;m Lawand Othman
+			<Heading color='heading' mb={8}>
+				Hey, I&apos;m Lawand Othman 👋
 			</Heading>
 			<Text as='p' color='text' mb={2} fontWeight='medium'>
-				I&apos;m a software engineer based in London, UK. You&apos;ve found my
-				personal slice of the internet where I share all the beautiful and fun
-				stuff I&apos;m working on.
+				Full-Stack Software Engineer based in London, UK 🇬🇧
 			</Text>
+			<Text color='text' mt={8} fontWeight='medium'>
+				Have a question or want to work together?
+			</Text>
+			<Flex mt={12} direction='row' justifyContent='space-between'>
+				{contact.map((contactItem) => (
+					<IconButton
+						key={contactItem.name}
+						aria-label={contactItem.name}
+						icon={contactItem.icon}
+						variant='outline'
+						as='a'
+						href={contactItem.link}
+						target={contactItem.isExternal ? '_blank' : '_self'}
+						borderWidth={['0px', '1px']}
+						p={4}
+						_focus={{ boxShadow: 'none' }}
+					/>
+				))}
+			</Flex>
 		</Shell>
 	)
 }

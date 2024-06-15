@@ -1,4 +1,4 @@
-import { Email, GitHub, KoFi, LinkedIn, Twitter } from 'components'
+import { Email, GitHub, KoFi, LinkedIn, X } from 'components'
 
 const contact = [
 	{
@@ -14,15 +14,15 @@ const contact = [
 		isExternal: true,
 	},
 	{
-		name: 'LinkedIn',
-		icon: <LinkedIn fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
-		link: 'https://www.linkedin.com/in/lawandothman/',
+		name: 'X',
+		icon: <X fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
+		link: 'https://x.com/lwndothman',
 		isExternal: true,
 	},
 	{
-		name: 'Twitter',
-		icon: <Twitter fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
-		link: 'https://twitter.com/lwndothman',
+		name: 'LinkedIn',
+		icon: <LinkedIn fill='icon' width='30' height='30' viewBox='0 0 58 58' />,
+		link: 'https://www.linkedin.com/in/lawandothman/',
 		isExternal: true,
 	},
 	{
