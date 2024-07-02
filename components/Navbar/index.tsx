@@ -8,6 +8,10 @@ const navbarItems = [
 		href: '/',
 	},
 	{
+  	title: 'Projects',
+  	href: '/projects',
+	},
+	{
 		title: 'Stack',
 		href: '/stack',
 	},
@@ -29,7 +33,7 @@ export const Navbar = () => {
 				<Flex
 					alignItems='center'
 					justifyContent='space-between'
-					w='130px'
+					w='200px'
 					color='heading'
 				>
 					{navbarItems.map((item) => (
