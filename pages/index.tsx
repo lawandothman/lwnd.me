@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 	return (
 		<Shell>
 			<Heading color='heading' mb={8}>
-				Hey, I&apos;m Lawand Othman 👋
+				Hey, I&apos;m Lawand 👋
 			</Heading>
 			<Text as='p' color='text' mb={2} fontWeight='medium'>
 				Full-Stack Software Engineer based in London, UK 🇬🇧
