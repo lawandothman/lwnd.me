@@ -23,7 +23,7 @@ const stack: IStack[] = [
 	},
 	{
 		name: 'Neovim',
-		description: '\"I use Vim by the way!\"',
+		description: '"I use Vim by the way!"',
 		url: 'https://neovim.io/',
 		icon: <Neovim viewBox='10 0 602 734' width='58' height='58' />,
 	},

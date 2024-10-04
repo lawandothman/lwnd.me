@@ -418,7 +418,6 @@ export const Kitty = (props: IconProps) => (
 
 export const Raycast = (props: IconProps) => (
 	<Icon {...props}>
-
 		<g>
 			<path fill="#FF6161" d="M10,25.8V30L0,20l2.1-2.1L10,25.8z M14.2,30H10l10,10l2.1-2.1L14.2,30z M37.9,22.1L40,20L20,0l-2.1,2.1
 		l7.9,7.9H21l-5.5-5.5l-2.1,2.1l3.4,3.4h-2.4v15.5H30v-2.4l3.4,3.4l2.1-2.1L30,19v-4.8L37.9,22.1z M11,9L9,11.1l2.2,2.2l2.1-2.1
