@@ -7,7 +7,7 @@ const stack: IStack[] = [
 		name: 'Rust',
 		description: 'Blazingly fast',
 		url: 'https://www.rust-lang.org/',
-		icon: <Rust viewBox='3 3 100 100' width='58' height='58' fill='icon' />,
+		icon: <Rust viewBox='0 0 32 32' width='58' height='58' fill='icon' />,
 	},
 	{
 		name: 'TypeScript',
