@@ -9,10 +9,10 @@ const Home: NextPage = () => {
 	return (
 		<Shell>
 			<Heading color='heading' mb={8}>
-				Hey, I&apos;m Lawand 👋
+				Hey, I&apos;m Lawand
 			</Heading>
 			<Text as='p' color='text' mb={2} fontWeight='medium'>
-				Full-Stack Software Engineer based in London, UK 🇬🇧
+				Full-Stack Software Engineer based in London, UK
 			</Text>
 			<Text color='text' mt={8} fontWeight='medium'>
 				Have a question or want to work together?
