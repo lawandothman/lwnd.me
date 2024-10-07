@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     default: 'Lawand Othman',
     template: '%s | Lawand Othman',
   },
-  description: 'Full stack developer, hacker and creator',
+  description: 'Full-stack software engineer, hacker and creator',
   openGraph: {
     title: 'Lawand Othman',
-    description: 'Full stack developer, hacker and creator',
+    description: 'Full-stack software engineer, hacker and creator',
     url: 'https://lwnd.me/',
     siteName: 'Lawand Othman',
     locale: 'en_GB',
@@ -41,13 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head />
       <body className='antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto'>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          disableTransitionOnChange
-          enableSystem
-        >
+        <ThemeProvider attribute='class' disableTransitionOnChange>
           <main className='flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0'>
             <Navbar />
             {children}
