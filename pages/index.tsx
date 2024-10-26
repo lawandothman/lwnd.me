@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 				Hey, I&apos;m Lawand
 			</Heading>
 			<Text as='p' color='text' mb={2} fontWeight='medium'>
-				Full-Stack Software Engineer based in London, UK
+				Software Engineer based in London, UK
 			</Text>
 			<Text color='text' mt={8} fontWeight='medium'>
 				Have a question or want to work together?
