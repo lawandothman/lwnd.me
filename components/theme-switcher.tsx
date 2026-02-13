@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
 export function ThemeSwitcher() {
-	const { theme, setTheme } = useTheme()
+	const { setTheme, resolvedTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
 	useEffect(() => {
@@ -18,11 +18,11 @@ export function ThemeSwitcher() {
 
 	return (
 		<button
-			onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-			aria-label={theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+			onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
+			aria-label={resolvedTheme === 'light' ? 'Dark Mode' : 'Light Mode'}
 			className='cursor-pointer text-muted-foreground hover:text-foreground transition-colors'
 		>
-			{theme === 'light' ? <Moon className='size-4' /> : <Sun className='size-4' />}
+			{resolvedTheme === 'light' ? <Moon className='size-4' /> : <Sun className='size-4' />}
 		</button>
 	)
 }
