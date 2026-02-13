@@ -1,0 +1,6 @@
+{
+	"plugins": ["typescript", "react", "nextjs", "jsx-a11y", "oxc"],
+	"rules": {
+		"no-unused-vars": "warn"
+	}
+}
