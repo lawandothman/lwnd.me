@@ -17,6 +17,7 @@ const lora = Lora({
 	subsets: ['latin'],
 	variable: '--font-display',
 	weight: ['400', '500'],
+	display: 'optional',
 })
 
 export const metadata: Metadata = {
