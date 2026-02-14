@@ -30,7 +30,7 @@ export function StackItem({
 			href={stack.url}
 			rel='noopener noreferrer'
 			target='_blank'
-			className='group flex items-center justify-between border-b border-border/50 py-4 transition-colors'
+			className='group border-border/50 flex items-center justify-between border-b py-4 transition-colors'
 		>
 			<div className='flex items-center gap-4'>
 				<Icon className='size-8 shrink-0 fill-current' />

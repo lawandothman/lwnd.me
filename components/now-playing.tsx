@@ -14,7 +14,7 @@ export function NowPlaying() {
 			<SpotifyIcon
 				className={cn(
 					'size-4',
-					data?.songUrl ? 'fill-[#1DB954]' : 'fill-current text-muted-foreground'
+					data?.songUrl ? 'fill-[#1DB954]' : 'text-muted-foreground fill-current'
 				)}
 			/>
 			{data?.songUrl ? (

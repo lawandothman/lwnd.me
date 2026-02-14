@@ -20,7 +20,7 @@ export function ThemeSwitcher() {
 		<button
 			onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
 			aria-label={resolvedTheme === 'light' ? 'Dark Mode' : 'Light Mode'}
-			className='cursor-pointer text-muted-foreground hover:text-foreground transition-colors'
+			className='text-muted-foreground hover:text-foreground cursor-pointer transition-colors'
 		>
 			{resolvedTheme === 'light' ? <Moon className='size-4' /> : <Sun className='size-4' />}
 		</button>

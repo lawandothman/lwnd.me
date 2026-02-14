@@ -8,7 +8,7 @@ const navItems = [
 
 export function Navbar() {
 	return (
-		<nav className='sticky top-0 z-50 w-full bg-background/80 backdrop-blur-xl'>
+		<nav className='bg-background/80 sticky top-0 z-50 w-full backdrop-blur-xl'>
 			<div className='mx-auto flex w-full max-w-2xl items-center justify-between px-6 py-4 sm:px-8'>
 				<Link href='/' className='font-display text-lg'>
 					lwnd

@@ -47,9 +47,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body
-				className={cn(inter.variable, lora.variable, 'flex min-h-screen flex-col font-sans')}
-			>
+			<body className={cn(inter.variable, lora.variable, 'flex min-h-screen flex-col font-sans')}>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
 					<Navbar />
 					<main className='mx-auto flex w-full max-w-2xl flex-1 flex-col px-6 pt-20 pb-28 sm:px-8'>

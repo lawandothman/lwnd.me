@@ -2,16 +2,14 @@ import type { IProject } from '@/types'
 
 const projects: IProject[] = [
 	{
-		title: 'ミル Miru',
-		description: 'Remove the drama from movie night',
+		title: 'Miru',
+		description: 'The social way to pick your next movie',
 		url: 'https://miru-chi.vercel.app',
 		source: 'https://github.com/lawandothman/miru',
-		status: 'ALPHA',
 	},
 	{
 		title: 'Pokédex',
 		description: "Gotta catch 'em all!",
-		url: 'https://pokedex-lwnd.up.railway.app',
 		source: 'https://github.com/lawandothman/pokedex',
 	},
 	{

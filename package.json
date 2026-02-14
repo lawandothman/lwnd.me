@@ -19,22 +19,23 @@
 		"react-dom": "19.2.4",
 		"swr": "2.4.0"
 	},
-	"browserslist": [
-		"Chrome >= 100",
-		"Firefox >= 100",
-		"Safari >= 15",
-		"Edge >= 100"
-	],
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.1.18",
 		"@types/node": "25.2.3",
 		"@types/react": "19.2.14",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
+		"oxfmt": "0.32.0",
 		"oxlint": "1.47.0",
 		"shadcn": "3.8.4",
 		"tailwind-merge": "3.4.0",
 		"tailwindcss": "4.1.18",
 		"typescript": "5.9.3"
-	}
+	},
+	"browserslist": [
+		"Chrome >= 100",
+		"Firefox >= 100",
+		"Safari >= 15",
+		"Edge >= 100"
+	]
 }
