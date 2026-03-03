@@ -27,7 +27,7 @@
 		"clsx": "2.1.1",
 		"oxfmt": "0.32.0",
 		"oxlint": "1.50.0",
-		"shadcn": "3.8.4",
+		"shadcn": "3.8.5",
 		"tailwind-merge": "3.5.0",
 		"tailwindcss": "4.1.18",
 		"typescript": "5.9.3"
