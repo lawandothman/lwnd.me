@@ -4,7 +4,7 @@ const projects: IProject[] = [
 	{
 		title: 'Miru',
 		description: 'The social way to pick your next movie',
-		url: 'https://miru-chi.vercel.app',
+		url: 'https://watchmiru.app',
 		source: 'https://github.com/lawandothman/miru',
 	},
 	{
