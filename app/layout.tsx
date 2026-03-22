@@ -45,6 +45,32 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+	const jsonLd = {
+		'@context': 'https://schema.org',
+		'@graph': [
+			{
+				'@type': 'WebSite',
+				name: 'lwnd',
+				url: 'https://lwnd.me',
+			},
+			{
+				'@type': 'Person',
+				name: 'Lawand Othman',
+				url: 'https://lwnd.me',
+				jobTitle: 'Software Engineer',
+				address: {
+					'@type': 'PostalAddress',
+					addressLocality: 'London',
+				},
+				sameAs: [
+					'https://github.com/lawandothman',
+					'https://x.com/lwndothman',
+					'https://www.linkedin.com/in/lawandothman/',
+				],
+			},
+		],
+	}
+
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<body className={cn(inter.variable, lora.variable, 'flex min-h-dvh flex-col font-sans')}>
@@ -56,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Footer />
 				</ThemeProvider>
 				<Analytics />
+				<script type='application/ld+json'>{JSON.stringify(jsonLd)}</script>
 			</body>
 		</html>
 	)
