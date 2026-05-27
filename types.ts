@@ -7,7 +7,14 @@ export interface IProject {
 }
 
 export type ContactIconName = 'email' | 'github' | 'x' | 'linkedin' | 'kofi'
-export type StackIconName = 'rust' | 'typescript' | 'graphql' | 'neovim' | 'ghostty' | 'raycast'
+export type StackIconName =
+	| 'rust'
+	| 'typescript'
+	| 'graphql'
+	| 'neovim'
+	| 'ghostty'
+	| 'tmux'
+	| 'raycast'
 
 export interface IContact {
 	name: string

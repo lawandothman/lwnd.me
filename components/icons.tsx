@@ -267,6 +267,22 @@ export function GhosttyIcon(props: IconProps) {
 	)
 }
 
+export function TmuxIcon(props: IconProps) {
+	return (
+		<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 160 160' {...props}>
+			<path
+				fillRule='evenodd'
+				d='m0 116h160v29c0 8.286-6.722 15-15 15h-130c-8.283 0-15-6.707-15-15v-29zm0 0h160v30h-160v-30z'
+				fill='#1BB91F'
+			/>
+			<path
+				fillRule='evenodd'
+				d='m83 70v-70h-6v146h6v-70h77v-6h-77zm-83-54.99c0-8.288 6.722-15.01 15-15.01h130c8.283 0 15 6.725 15 15.01v131h-160v-131z'
+			/>
+		</svg>
+	)
+}
+
 export function RaycastIcon(props: IconProps) {
 	return (
 		<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 40 40' {...props}>

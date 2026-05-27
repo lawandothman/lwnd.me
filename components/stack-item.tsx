@@ -6,6 +6,7 @@ import {
 	NeovimIcon,
 	RaycastIcon,
 	RustIcon,
+	TmuxIcon,
 	TypescriptIcon,
 } from '@/components/icons'
 import { ArrowUpRight } from 'lucide-react'
@@ -16,6 +17,7 @@ const stackIconMap: Record<StackIconName, React.FC<React.SVGProps<SVGSVGElement>
 	graphql: GraphQLIcon,
 	neovim: NeovimIcon,
 	ghostty: GhosttyIcon,
+	tmux: TmuxIcon,
 	raycast: RaycastIcon,
 }
 
