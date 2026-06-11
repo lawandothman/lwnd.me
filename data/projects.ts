@@ -2,6 +2,11 @@ import type { IProject } from '@/types'
 
 const projects: IProject[] = [
 	{
+		title: 'Matchbar',
+		description: 'The World Cup in your menu bar',
+		url: 'https://matchbar-xi.vercel.app',
+	},
+	{
 		title: 'Miru',
 		description: 'The social way to pick your next movie - ~500 monthly active users',
 		url: 'https://watchmiru.app',
