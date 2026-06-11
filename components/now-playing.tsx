@@ -24,7 +24,7 @@ export function NowPlaying() {
 					rel='noopener noreferrer'
 					className='text-muted-foreground hover:text-foreground truncate transition-colors'
 				>
-					{data.title} — {data.artist}
+					{data.title} - {data.artist}
 				</a>
 			) : (
 				<span className='text-muted-foreground'>Not Playing</span>

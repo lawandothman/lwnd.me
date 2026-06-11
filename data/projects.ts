@@ -3,20 +3,21 @@ import type { IProject } from '@/types'
 const projects: IProject[] = [
 	{
 		title: 'Miru',
-		description: 'The social way to pick your next movie',
+		description: 'The social way to pick your next movie - ~500 monthly active users',
 		url: 'https://watchmiru.app',
 		source: 'https://github.com/lawandothman/miru',
+	},
+	{
+		title: 'uk-police-api',
+		description: 'A Rust wrapper for the UK Police API, published on crates.io',
+		url: 'https://crates.io/crates/uk-police-api',
+		source: 'https://github.com/lawandothman/uk-police-api',
 	},
 	{
 		title: 'lwnd.me',
 		description: 'My personal website',
 		source: 'https://github.com/lawandothman/lwnd.me',
 		url: '#',
-	},
-	{
-		title: 'Swindler',
-		description: 'CovHack2020 2nd Place Winner - a social deception game',
-		source: 'https://github.com/pedsm/swindler',
 	},
 	{
 		title: 'White Rabbit',
