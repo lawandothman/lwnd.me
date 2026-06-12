@@ -23,7 +23,7 @@ const projects: IProject[] = [
 		title: 'lwnd.me',
 		description: 'My personal website',
 		source: 'https://github.com/lawandothman/lwnd.me',
-		url: '#',
+		url: 'https://lwnd.me',
 	},
 	{
 		title: 'White Rabbit',
