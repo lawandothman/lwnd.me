@@ -5,6 +5,7 @@ const projects: IProject[] = [
 		title: 'Matchbar',
 		description: 'The World Cup in your menu bar',
 		url: 'https://matchbar-xi.vercel.app',
+		source: 'https://github.com/lawandothman/matchbar',
 	},
 	{
 		title: 'Miru',
