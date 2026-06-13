@@ -9,7 +9,6 @@ import {
 	TmuxIcon,
 	TypescriptIcon,
 } from '@/components/icons'
-import { ArrowUpRight } from 'lucide-react'
 
 const stackIconMap: Record<StackIconName, React.FC<React.SVGProps<SVGSVGElement>>> = {
 	rust: RustIcon,
@@ -32,16 +31,13 @@ export function StackItem({
 			href={stack.url}
 			rel='noopener noreferrer'
 			target='_blank'
-			className='group border-border/50 flex items-center justify-between border-b py-4 transition-colors'
+			className='hover:bg-foreground/5 -mx-4 flex items-center gap-4 rounded-xl px-4 py-4 transition-colors'
 		>
-			<div className='flex items-center gap-4'>
-				<Icon className='size-8 shrink-0 fill-current' />
-				<div>
-					<span className='text-sm font-medium'>{stack.name}</span>
-					<p className='text-muted-foreground text-sm'>{stack.description}</p>
-				</div>
+			<Icon className='size-8 shrink-0 fill-current' />
+			<div>
+				<span className='font-display text-lg tracking-tight'>{stack.name}</span>
+				<p className='text-muted-foreground text-sm'>{stack.description}</p>
 			</div>
-			<ArrowUpRight className='text-muted-foreground/0 group-hover:text-muted-foreground size-4 shrink-0 transition-all' />
 		</a>
 	)
 }
