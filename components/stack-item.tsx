@@ -1,5 +1,3 @@
-import type { StackIconName } from '@/types'
-
 import {
 	GhosttyIcon,
 	GraphQLIcon,
@@ -9,6 +7,7 @@ import {
 	TmuxIcon,
 	TypescriptIcon,
 } from '@/components/icons'
+import type { StackIconName } from '@/types'
 
 const stackIconMap: Record<StackIconName, React.FC<React.SVGProps<SVGSVGElement>>> = {
 	rust: RustIcon,

@@ -14,6 +14,11 @@ const projects: IProject[] = [
 		source: 'https://github.com/lawandothman/miru',
 	},
 	{
+		title: 'kp',
+		description: 'Kill process running on given port - blazingly fast!',
+		source: 'https://github.com/lawandothman/kp',
+	},
+	{
 		title: 'uk-police-api',
 		description: 'A Rust wrapper for the UK Police API, published on crates.io',
 		url: 'https://crates.io/crates/uk-police-api',

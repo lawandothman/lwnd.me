@@ -1,6 +1,5 @@
-import type { IProject } from '@/types'
-
 import { GitHubIcon } from '@/components/icons'
+import type { IProject } from '@/types'
 import { ExternalLink } from 'lucide-react'
 
 export function ProjectCard({ project }: { project: IProject }) {

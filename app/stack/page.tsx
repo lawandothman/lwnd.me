@@ -1,7 +1,6 @@
-import type { Metadata } from 'next'
-
 import { StackItem } from '@/components/stack-item'
 import stack from '@/data/stack'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Stack',

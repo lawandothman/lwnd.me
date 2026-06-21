@@ -1,48 +1,48 @@
-import type { IStack } from "@/types";
+import type { IStack } from '@/types'
 
 const stack: IStack[] = [
 	{
-		name: "Rust",
-		description: "Blazingly fast",
-		url: "https://www.rust-lang.org/",
-		icon: "rust",
+		name: 'Rust',
+		description: 'Blazingly fast',
+		url: 'https://www.rust-lang.org/',
+		icon: 'rust',
 	},
 	{
-		name: "TypeScript",
-		description: "JavaScript but with no surprises",
-		url: "https://www.typescriptlang.org/",
-		icon: "typescript",
+		name: 'TypeScript',
+		description: 'JavaScript but with no surprises',
+		url: 'https://www.typescriptlang.org/',
+		icon: 'typescript',
 	},
 	{
-		name: "GraphQL",
-		description: "Ask for what you need and get exactly that",
-		url: "https://graphql.org/",
-		icon: "graphql",
+		name: 'GraphQL',
+		description: 'Ask for what you need and get exactly that',
+		url: 'https://graphql.org/',
+		icon: 'graphql',
 	},
 	{
-		name: "Neovim",
-		description: "By the way",
-		url: "https://neovim.io/",
-		icon: "neovim",
+		name: 'Neovim',
+		description: 'By the way',
+		url: 'https://neovim.io/',
+		icon: 'neovim',
 	},
 	{
-		name: "Ghostty",
-		description: "Fast, native, feature-rich terminal emulator",
-		url: "https://ghostty.org/",
-		icon: "ghostty",
+		name: 'Ghostty',
+		description: 'Fast, native, feature-rich terminal emulator',
+		url: 'https://ghostty.org/',
+		icon: 'ghostty',
 	},
 	{
-		name: "tmux",
-		description: "Keeping terminal sessions alive since 2007",
-		url: "https://github.com/tmux/tmux/wiki",
-		icon: "tmux",
+		name: 'tmux',
+		description: 'Keeping terminal sessions alive since 2007',
+		url: 'https://github.com/tmux/tmux/wiki',
+		icon: 'tmux',
 	},
 	{
-		name: "Raycast",
-		description: "My shortcut to everything",
-		url: "https://raycast.com/",
-		icon: "raycast",
+		name: 'Raycast',
+		description: 'My shortcut to everything',
+		url: 'https://raycast.com/',
+		icon: 'raycast',
 	},
-];
+]
 
-export default stack;
+export default stack

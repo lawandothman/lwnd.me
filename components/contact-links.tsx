@@ -1,7 +1,6 @@
-import type { ContactIconName } from '@/types'
-
 import { EmailIcon, GitHubIcon, KoFiIcon, LinkedInIcon, XIcon } from '@/components/icons'
 import contacts from '@/data/contact'
+import type { ContactIconName } from '@/types'
 
 const iconMap: Record<ContactIconName, React.FC<React.SVGProps<SVGSVGElement>>> = {
 	email: EmailIcon,

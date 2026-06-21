@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
-
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import { Analytics } from '@vercel/analytics/react'
+import type { Metadata } from 'next'
 import { Inter, Lora } from 'next/font/google'
+
 import '@/app/globals.css'
 
 const inter = Inter({

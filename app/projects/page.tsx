@@ -1,7 +1,6 @@
-import type { Metadata } from 'next'
-
 import { ProjectCard } from '@/components/project-card'
 import projects from '@/data/projects'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Projects',
