@@ -16,6 +16,7 @@ const projects: IProject[] = [
 	{
 		title: 'kp',
 		description: 'Kill process running on given port - blazingly fast!',
+		url: 'https://github.com/lawandothman/kp',
 		source: 'https://github.com/lawandothman/kp',
 	},
 	{
