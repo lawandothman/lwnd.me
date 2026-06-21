@@ -1,5 +1,6 @@
 @import 'tailwindcss';
-@import 'shadcn/tailwind.css';
+
+@plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -145,4 +146,146 @@
 
 .animate-fade-up {
 	animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.prose .shiki {
+	margin: 0;
+	padding: 0.75rem 1rem;
+	overflow-x: auto;
+	font-size: 0.875rem;
+	line-height: 1.6;
+
+	--shiki-foreground: hsla(0, 0%, 9%, 1);
+	--shiki-background: transparent;
+	--shiki-token-constant: oklch(53.18% 0.2399 256.99);
+	--shiki-token-string: oklch(51.75% 0.1453 147.65);
+	--shiki-token-comment: hsla(0, 0%, 40%, 1);
+	--shiki-token-keyword: oklch(53.5% 0.2058 2.84);
+	--shiki-token-parameter: oklch(52.79% 0.1496 54.65);
+	--shiki-token-function: oklch(47.18% 0.2579 304);
+	--shiki-token-string-expression: oklch(51.75% 0.1453 147.65);
+	--shiki-token-punctuation: hsla(0, 0%, 9%, 1);
+	--shiki-token-link: oklch(51.75% 0.1453 147.65);
+	--shiki-token-number: #111111;
+	--shiki-token-property: oklch(53.18% 0.2399 256.99);
+	--shiki-token-diff-deleted: oklch(58.01% 0.227 25.12);
+	--shiki-token-diff-inserted: oklch(57.81% 0.1776 147.5);
+}
+
+.dark .prose .shiki {
+	--shiki-foreground: hsla(0, 0%, 93%, 1);
+	--shiki-background: transparent;
+	--shiki-token-constant: oklch(71.7% 0.1648 250.79);
+	--shiki-token-string: oklch(73.1% 0.2158 148.29);
+	--shiki-token-comment: hsla(0, 0%, 63%, 1);
+	--shiki-token-keyword: oklch(69.36% 0.2223 3.91);
+	--shiki-token-parameter: oklch(77.21% 0.1991 64.28);
+	--shiki-token-function: oklch(69.87% 0.2037 309.51);
+	--shiki-token-string-expression: oklch(73.1% 0.2158 148.29);
+	--shiki-token-punctuation: hsla(0, 0%, 93%, 1);
+	--shiki-token-link: oklch(73.1% 0.2158 148.29);
+	--shiki-token-number: #ffffff;
+	--shiki-token-property: oklch(71.7% 0.1648 250.79);
+	--shiki-token-diff-deleted: oklch(62.56% 0.2277 23.03);
+	--shiki-token-diff-inserted: oklch(58.11% 0.1815 146.55);
+}
+
+.prose .code-frame {
+	position: relative;
+	overflow: hidden;
+	margin: 1.75rem 0;
+	padding: 3rem;
+	border-radius: 12px;
+	background: var(--background);
+}
+
+.dark .prose .code-frame {
+	background: #000;
+}
+
+.prose .code-window {
+	position: relative;
+}
+
+.prose .code-gridlines-h::before,
+.prose .code-gridlines-h::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -150px;
+	width: 1200px;
+	height: 1px;
+	background: #ebebeb;
+}
+
+.prose .code-gridlines-h::after {
+	top: auto;
+	bottom: 0;
+}
+
+.prose .code-gridlines-v::before,
+.prose .code-gridlines-v::after {
+	content: '';
+	position: absolute;
+	top: -150px;
+	left: 0;
+	width: 1px;
+	height: calc(100% + 300px);
+	background: #ebebeb;
+}
+
+.prose .code-gridlines-v::after {
+	left: auto;
+	right: 0;
+}
+
+.prose .code-bracket-left,
+.prose .code-bracket-right {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+}
+
+.prose .code-bracket-left {
+	top: -12px;
+	left: -12px;
+}
+
+.prose .code-bracket-right {
+	right: -12px;
+	bottom: -12px;
+}
+
+.prose .code-bracket-left::before,
+.prose .code-bracket-right::before {
+	content: '';
+	position: absolute;
+	top: 12px;
+	width: 100%;
+	height: 1px;
+	background: #a8a8a8;
+}
+
+.prose .code-bracket-left::after,
+.prose .code-bracket-right::after {
+	content: '';
+	position: absolute;
+	left: 12px;
+	width: 1px;
+	height: 100%;
+	background: #a8a8a8;
+}
+
+.dark .prose .code-gridlines-h::before,
+.dark .prose .code-gridlines-h::after,
+.dark .prose .code-gridlines-v::before,
+.dark .prose .code-gridlines-v::after {
+	background: #1a1a1a;
+}
+
+.dark .prose .code-bracket-left::before,
+.dark .prose .code-bracket-right::before,
+.dark .prose .code-bracket-left::after,
+.dark .prose .code-bracket-right::after {
+	background: #515356;
 }

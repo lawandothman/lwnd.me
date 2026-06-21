@@ -1,6 +1,6 @@
-import type { IContact } from '@/types'
+import type { Contact } from '@/types'
 
-const contacts: IContact[] = [
+const contacts: Contact[] = [
 	{
 		name: 'Email',
 		icon: 'email',

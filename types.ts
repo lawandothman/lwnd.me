@@ -1,9 +1,17 @@
-export interface IProject {
+export interface Project {
 	title: string
 	source?: string
 	description: string
 	url?: string
 	status?: string
+}
+
+export interface Post {
+	id: string
+	title: string
+	slug: string
+	description: string
+	date: string
 }
 
 export type ContactIconName = 'email' | 'github' | 'x' | 'linkedin' | 'kofi'
@@ -16,14 +24,14 @@ export type StackIconName =
 	| 'tmux'
 	| 'raycast'
 
-export interface IContact {
+export interface Contact {
 	name: string
 	link: string
 	isExternal: boolean
 	icon: ContactIconName
 }
 
-export interface IStack {
+export interface Stack {
 	name: string
 	description: string
 	url: string
