@@ -1,6 +1,6 @@
-import type { IStack } from '@/types'
+import type { Stack } from '@/types'
 
-const stack: IStack[] = [
+const stack: Stack[] = [
 	{
 		name: 'Rust',
 		description: 'Blazingly fast',

@@ -1,8 +1,8 @@
 import { GitHubIcon } from '@/components/icons'
-import type { IProject } from '@/types'
+import type { Project } from '@/types'
 import { ExternalLink } from 'lucide-react'
 
-export function ProjectCard({ project }: { project: IProject }) {
+export function ProjectCard({ project }: { project: Project }) {
 	const hasUrl = project.url && project.url !== '#'
 	const primaryHref = hasUrl ? project.url : project.source
 

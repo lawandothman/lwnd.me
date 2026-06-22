@@ -1,6 +1,6 @@
-import type { IProject } from '@/types'
+import type { Project } from '@/types'
 
-const projects: IProject[] = [
+const projects: Project[] = [
 	{
 		title: 'Matchbar',
 		description: 'The World Cup in your menu bar',

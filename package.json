@@ -10,17 +10,28 @@
 		"fmt": "oxfmt --write ."
 	},
 	"dependencies": {
+		"@notionhq/client": "2.3.0",
+		"@shikijs/rehype": "4.2.0",
 		"@vercel/analytics": "2.0.1",
 		"lucide-react": "1.17.0",
 		"next": "16.2.9",
 		"next-themes": "0.4.6",
+		"notion-to-md": "3.1.9",
 		"radix-ui": "1.4.3",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
-		"swr": "2.4.1"
+		"rehype-external-links": "3.0.0",
+		"rehype-stringify": "10.0.1",
+		"remark-gfm": "4.0.1",
+		"remark-parse": "11.0.0",
+		"remark-rehype": "11.1.2",
+		"shiki": "4.2.0",
+		"swr": "2.4.1",
+		"unified": "11.0.5"
 	},
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.3.0",
+		"@tailwindcss/typography": "0.5.20",
 		"@types/node": "25.6.0",
 		"@types/react": "19.2.17",
 		"class-variance-authority": "0.7.1",
@@ -30,6 +41,9 @@
 		"tailwind-merge": "3.6.0",
 		"tailwindcss": "4.3.0",
 		"typescript": "6.0.3"
+	},
+	"overrides": {
+		"@types/react": "19.2.17"
 	},
 	"browserslist": [
 		"Chrome >= 100",
