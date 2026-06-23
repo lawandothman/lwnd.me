@@ -60,7 +60,7 @@ export async function getPosts(): Promise<Post[]> {
 	}
 }
 
-export async function getPost(slug: string): Promise<{ post: Post; html: string } | null> {
+async function findPublishedPage(slug: string): Promise<PageObjectResponse | null> {
 	if (!process.env.NOTION_TOKEN || !databaseId) return null
 
 	const response = await notion.databases.query({
@@ -74,7 +74,16 @@ export async function getPost(slug: string): Promise<{ post: Post; html: string 
 		page_size: 1,
 	})
 
-	const page = response.results.find(isPage)
+	return response.results.find(isPage) ?? null
+}
+
+export async function getPostMeta(slug: string): Promise<Post | null> {
+	const page = await findPublishedPage(slug)
+	return page ? toPost(page) : null
+}
+
+export async function getPost(slug: string): Promise<{ post: Post; html: string } | null> {
+	const page = await findPublishedPage(slug)
 	if (!page) return null
 
 	const blocks = await n2m.pageToMarkdown(page.id)
